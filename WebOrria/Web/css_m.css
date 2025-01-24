@@ -76,7 +76,7 @@ body {
 
 .content {
     padding: 20px;
-    background-color: lightblue;
+    background-color: lightgreen;
 }
 
 .ikonoak {
@@ -174,4 +174,18 @@ table, td, tr, th{
 .paketearenJarraipenaImg{
     width: 25%;
     height: 25%;
+}
+.garraioZerbitzuaImg{
+    width: 25%;
+    height: 25%;
+}
+
+.garraioZerbitzua{
+    background-color: lightblue;
+}
+.bezeroarenArreta{
+    background-color: lightblue;
+}
+.paketearenJarraipena{
+    background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5)
 }
