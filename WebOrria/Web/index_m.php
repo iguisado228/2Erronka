@@ -15,9 +15,7 @@
     <div class="content">
         <?php require_once "menu.php" ?>
     </div>
-
     
-
     <footer>
         <?php require_once "footer_m.php" ?>
     </footer>

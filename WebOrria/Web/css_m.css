@@ -102,6 +102,7 @@ footer {
     min-width: 350%;
     min-height: 250%;
     font-size: 200%;
+    text-decoration: none;
 }
 .menu ul {
     list-style: none;
@@ -109,6 +110,7 @@ footer {
     margin: 0;
 }
 .menu ul li {
+    list-style: none;
     padding: 15%;
     border-bottom: 1px solid #ddd;
     cursor: pointer;
@@ -116,6 +118,7 @@ footer {
     font-weight: bold;
     color: #007BFF;
     transition: background 0.3s, color 0.3s;
+    text-decoration: none;
 }
 .menu ul li:hover {
     background-color: #007BFF;
@@ -123,4 +126,9 @@ footer {
 }
 .menu ul li:last-child {
     border-bottom: none;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
 }

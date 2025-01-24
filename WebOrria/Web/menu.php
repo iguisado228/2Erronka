@@ -7,10 +7,10 @@
         </div>
         <div class="menu">
             <ul>
-                <li>Inicio</li>
-                <li>Servicios</li>
-                <li>Acerca de</li>
-                <li>Contacto</li>
+                <li><a href="index_m.php">Hasiera</a></li>
+                <li><a href="produktuak.php">Produktuak</a></li>
+                <li><a href="kontaktua.php">Kontaktua</a></li>
+                <li><a href="zerbitzuak.php">Zerbitzuak</a></li>
             </ul>
         </div>
     </div>
