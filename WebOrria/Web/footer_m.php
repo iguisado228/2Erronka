@@ -4,5 +4,5 @@
 
 
 <div class="footer">
-    <p></p>
+    <p>&copy;TEK-8</p>
 </div>
