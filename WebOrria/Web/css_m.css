@@ -80,7 +80,7 @@ body {
 
 .content {
     padding: 20px;
-    background-color: lightgreen;
+    background-color: lightblue;
 }
 
 .ikonoak {
@@ -88,6 +88,28 @@ body {
     margin: auto;
     width: auto;
 }
+
+.eskaintza1{
+    background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5);
+    margin: 5%;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.eskaintza2{
+    background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5);
+    margin: 5%;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.aparteko {
+    display: flex;
+    justify-content: center;
+}
+
 
 /*Ezkerreko 3 barren menuaren CSS-a hau klikatuta menu bat agertu dezan bere CSS-arekin*/
 
