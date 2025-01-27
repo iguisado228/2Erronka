@@ -49,8 +49,9 @@ body {
         grid-area: footer;
         background-color: gray;
         margin-bottom: 0;
+        text-align: center;
+        padding: 10px;
     }
-
     .grid-container {
         display: grid;
         grid-template-areas: 
@@ -88,7 +89,7 @@ body {
 
 .content {
     padding: 20px;
-    background-color: lightgreen;
+    background-color: lightblue;
 }
 
 .ikonoak {
