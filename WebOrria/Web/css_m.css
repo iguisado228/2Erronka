@@ -40,6 +40,7 @@ body {
     .footer {
         grid-area: footer;
         background-color: gray;
+        margin-bottom: 0;
     }
 
     .grid-container {
@@ -79,6 +80,7 @@ body {
 
 .content {
     padding: 20px;
+    background-color: lightgreen;
 }
 
 .ikonoak {
@@ -225,4 +227,44 @@ a {
 .produktuPrezioa {
     text-align: center;
     margin-bottom: 40px;
+}
+.eskainitakoZerbitzuak{
+    display: grid;
+
+
+    grid-template-areas:
+        ' garraioZerbitzua'
+         'bezeroarenArreta'
+        ' paketearenJarraipena'; 
+        
+    width: 70%;
+    font-size: 150%;
+    margin-left: 15%;
+}
+
+
+table, td, tr, th{
+    row-gap: 0px;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.paketearenJarraipenaImg{
+    width: 25%;
+    height: 25%;
+}
+.garraioZerbitzuaImg{
+    width: 25%;
+    height: 25%;
+}
+
+.garraioZerbitzua{
+    background-color: lightblue;
+}
+.bezeroarenArreta{
+    background-color: lightblue;
+}
+.paketearenJarraipena{
+    background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5)
 }
