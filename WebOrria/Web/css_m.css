@@ -16,6 +16,12 @@ body {
 
 .grid-container {
     display: grid;
+    grid-template: 
+    "header" 20%
+    "nav" 10%
+    "main" 80%
+    "footer" 20%; 
+    background-color: lightgrey;
     grid-template:
         "header" 20%
         "nav" 10%
@@ -30,7 +36,9 @@ body {
 
     .nav {
         grid-area: nav;
+        height: 30%;
         background-color: lightgray;
+        
     }
     .main {
         grid-area: main;
@@ -41,8 +49,9 @@ body {
         grid-area: footer;
         background-color: gray;
         margin-bottom: 0;
+        text-align: center;
+        padding: 10px;
     }
-
     .grid-container {
         display: grid;
         grid-template-areas: 
@@ -290,3 +299,38 @@ table, td, tr, th{
 .paketearenJarraipena{
     background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5)
 }
+
+.formularioa {
+    border: 1px black solid;
+    width: 25%;
+    margin: 2% auto;
+    background-color: white;
+    padding: 1%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.formularioa .explikaziokaxa {
+    width: 90%;
+    height: 50px;
+}
+
+.formularioa>form>.kontaktatubotoiak {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 40% 40%;
+    grid-gap: 5%;
+}
+
+.formularioa>form>.kontaktatubotoiak>.bidalibotoia {
+    background-color: lightgreen;
+    margin: 2%;
+    height: 120%;
+}
+
+.formularioa>form>.kontaktatubotoiak>.ezabatubotoia {
+    background-color: rgb(255, 87, 87);
+    margin: 2%;
+    height: 120%;
+}
+
