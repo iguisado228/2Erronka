@@ -22,6 +22,12 @@ body {
     "main" 80%
     "footer" 20%; 
     background-color: lightgrey;
+    grid-template:
+        "header" 20%
+        "nav" 10%
+        "main" 80%
+        "footer" 20%; 
+}
 
     .header {
         grid-area: header;
@@ -36,7 +42,7 @@ body {
     }
     .main {
         grid-area: main;
-        background-color: green;
+        background-color: lightblue;
     }
 
     .footer {
@@ -45,19 +51,18 @@ body {
         margin-bottom: 0;
     }
 
-    .footer>p{
-        height: fit-content;
-    }
-
-    @media (min-width:768px){
-        grid-template: 
-        "header" 20%
-        "nav" 10%
-        "main" 90%
-        "footer" 10%;
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-rows: auto auto 4fr auto; 
     }
     
-}
+    
+
 
 /*Header-an dauden ikonoen eta enpresaren logoaren CSS-a*/
 .logoa {
@@ -69,8 +74,8 @@ body {
 .ikurriña {
     margin-top: 2%;
     float: right;
-    width: 8%;
-    height: 8%;
+    width: 70px;
+    height: 70px;
 }
 
 #ikonoa {
@@ -92,12 +97,13 @@ body {
     width: auto;
 }
 
-
 /*Ezkerreko 3 barren menuaren CSS-a hau klikatuta menu bat agertu dezan bere CSS-arekin*/
+
 .menu-container {
     position: relative;
     float:left;
 }
+
 .menu-icon {
     font-size: 300%;
     cursor: pointer;
@@ -110,9 +116,11 @@ body {
     align-items: center;
     transition: background 0.3s;
 }
+
 .menu-icon:hover {
     background-color: #0056b3;
 }
+
 .menu {
     display: none;
     position: absolute;
@@ -128,11 +136,13 @@ body {
     font-size: 200%;
     text-decoration: none;
 }
+
 .menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .menu ul li {
     list-style: none;
     padding: 10%;
@@ -144,10 +154,12 @@ body {
     transition: background 0.3s, color 0.3s;
     text-decoration: none;
 }
+
 .menu ul li:hover {
     background-color: #007BFF;
     color: white;
 }
+
 .menu ul li:last-child {
     border-bottom: none;
 }
@@ -155,6 +167,74 @@ body {
 a {
     text-decoration: none;
     color: blue;
+}
+
+
+/*Produktuen katalogorako estiloak*/
+
+.produktuak {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: stretch; /*div guztiak altura berdina edukitzeko*/
+    gap: 16px;      
+    text-align: center; 
+}
+
+.produktua {
+    border: 1px solid black;
+    padding: 16px;
+    margin: 16px;
+    width: 30%;
+    box-sizing: border-box;
+    background-color: white;   
+    border-radius: 8px;
+    transition: background-color 0.3s ease;    
+}
+.produktua:hover {
+    background-color: #8d8989; 
+    border-color: #666; 
+}
+
+@media (max-width: 768px) {
+    .produktua {
+        width: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .produktua {
+        width: 300px;
+        max-width: 300px;
+        height: 300px; /* Asegura espacio suficiente para centrar la imagen */
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        overflow: hidden; /* Evita que imágenes grandes se desborden */
+    }
+    
+    .produktua img {
+        width: 80%;
+        max-width: 240px;
+        height: auto;
+        max-height: 200px;
+        display: block; /* Evita espacios vacíos debajo de la imagen */
+        
+    }
+    
+}
+
+.produktua img {
+    width: 100%;
+    height: auto;
+}
+
+.produktuIzena {
+    text-align: center;
+}
+.produktuPrezioa {
+    text-align: center;
+    margin-bottom: 40px;
 }
 .eskainitakoZerbitzuak{
     display: grid;
