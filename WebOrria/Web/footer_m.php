@@ -2,6 +2,7 @@
   <link rel="stylesheet" href="css_m.css">
   <script src="https://kit.fontawesome.com/83f15f6aab.js" crossorigin="anonymous"></script>
 </head>
+
 <footer>
   <div class="footer">
     <div class="foothelb footleft"><i class="fa-solid fa-location-dot"></i> Elbarrena Auzoa, 30, 20150 Aduna, Gipuzkoa
