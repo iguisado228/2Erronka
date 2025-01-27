@@ -5,6 +5,7 @@
 
 <footer>
   <div class="footer">
+    <br>
     <div class="foothelb footleft"><i class="fa-solid fa-location-dot"></i> Elbarrena Auzoa, 30, 20150 Aduna, Gipuzkoa
     </div>
     <div class="footmail footleft"><i class="fa-solid fa-envelope"></i> administrazioa@TEK8.com</div>

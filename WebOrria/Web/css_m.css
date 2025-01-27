@@ -18,15 +18,11 @@ body {
     display: grid;
     grid-template: 
     "header" 20%
-    "nav" 10%
-    "main" 80%
+    "nav" 20%
+    "main" 40%
     "footer" 20%; 
     background-color: lightgrey;
-    grid-template:
-        "header" 20%
-        "nav" 10%
-        "main" 80%
-        "footer" 20%; 
+  
 }
 
     .header {
@@ -36,7 +32,6 @@ body {
 
     .nav {
         grid-area: nav;
-        height: 30%;
         background-color: lightgray;
         
     }
@@ -50,7 +45,8 @@ body {
         background-color: gray;
         margin-bottom: 0;
         text-align: center;
-        padding: 10px;
+        bottom: 0;
+        height: 100%;
     }
     .grid-container {
         display: grid;
@@ -88,31 +84,25 @@ body {
 }
 
 .content {
-    padding: 20px;
     background-color: lightblue;
+    width: 100%;
 }
 
 .ikonoak {
     text-align: center;
-    margin: auto;
     width: auto;
 }
 
 .eskaintza1{
     background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5);
-    margin: 5%;
-    padding: 5%;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 .eskaintza2{
     background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5);
-    margin: 5%;
-    padding: 5%;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 .aparteko {
     display: flex;
@@ -228,7 +218,7 @@ a {
 @media (max-width: 480px) {
     .produktua {
         width: 300px;
-        max-width: 300px;
+        max-width: 480px;
         height: 300px; /* Asegura espacio suficiente para centrar la imagen */
         display: flex;
         justify-content: center; /* Centra horizontalmente */
@@ -244,9 +234,37 @@ a {
         display: block; /* Evita espacios vacíos debajo de la imagen */
         
     }
-    
-}
 
+    .aparteko {
+        width: 300px;
+        max-width: 300px;
+        height: 300px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .eskaintza1{
+        background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5);
+        margin: 2%;
+        padding: 2%;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        
+    }
+    .eskaintza2{
+        background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5);
+        margin: 2%;
+        padding: 2%;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav{
+        display: none;
+    }
+}
 .produktua img {
     width: 100%;
     height: auto;
@@ -261,8 +279,6 @@ a {
 }
 .eskainitakoZerbitzuak{
     display: grid;
-
-
     grid-template-areas:
         ' garraioZerbitzua'
          'bezeroarenArreta'
