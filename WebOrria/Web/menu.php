@@ -18,6 +18,9 @@
         }
     </style>
 </head>
+<div class ="ikonoak">
+    <a href="#" language="euskara" class="active"><img class="ikurriña" src="../irudiak/ikurriña.png" alt="ikurriña" /></a>
+    <a href="#" language="english"><img class="uk" src="../irudiak/uk.png" alt="uk"></a>
 
 <body>
     <div class="ikonoak">
