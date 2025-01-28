@@ -307,10 +307,10 @@ table, td, tr, th{
 }
 
 .garraioZerbitzua{
-    background-color: lightblue;
+    background-color: lightgreen;
 }
 .bezeroarenArreta{
-    background-color: lightblue;
+    background-color: lightgreen;
 }
 .paketearenJarraipena{
     background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5)
@@ -322,7 +322,7 @@ table, td, tr, th{
 
 .formularioa {
     border: 1px black solid;
-    min-width: 70%;
+    min-width: 40%;
     margin: 2% auto;
     background-color: white;
     padding: 1%;
