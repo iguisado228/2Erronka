@@ -45,7 +45,7 @@
                 <label for="informazioajaso">Email bidez</label> <br> <br>
 
                 <label for="errorea">Akats mota*</label>
-                <select id="arazoa">
+                <select id="arazoa" class="arazoa">
                     <option disabled selected>Arazoa</option>
                     <option value="bueltatu">Gailua bueltatu nahi dut</option>
                     <option value="konponketa">Arazo bat konpondu nahi du</option>
@@ -73,5 +73,4 @@
     </footer>
 
 </body>
-
 </html>

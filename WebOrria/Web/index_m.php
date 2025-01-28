@@ -1,12 +1,13 @@
-
 <!DOCTYPE html>
-<html lang="es">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css_m.css">
-    <title>FROGA</title>
+    <title>Hasiera</title>
 </head>
+
 <body class="grid-container">
     <header class="header">
         <?php require_once "header_m.php" ?>
@@ -16,25 +17,27 @@
     </nav>
     <article class="main">
         <div class="content">
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sociosqu arcu, vulputate sed litora dictumst commodo in
-                gravida torquent viverra, nec laoreet placerat urna vivamus rutrum interdum augue. Orci curabitur per 
-                facilisis duis posuere fusce leo bibendum dictum, sem maecenas tincidunt varius pharetra lacinia lobortis lectus.
-                Platea facilisis interdum curabitur vulputate felis gravida montes inceptos aliquam euismod phasellus ornare, 
-                malesuada laoreet est ultricies lacinia mus hac et hendrerit venenatis. Hendrerit curabitur sollicitudin placerat 
-                egestas luctus felis, aptent pellentesque feugiat c
-                onsequat tincidunt auctor non, velit accumsan euismod sociis ridiculus.
-                Nascetur quisque quam cras integer mus sagittis tellus venenatis, imperdiet nibh neque tristique potenti vel
-                sapien viverra, class eu justo diam orci porta fringilla. Elementum consequat nisl suscipit sagittis vel cubilia 
-                congue nec integer, natoque bibendum primis fusce augue cras nam facilisi, mi curae eget montes ac habitasse suspendisse turpis. 
-                Imperdiet vestibulum laoreet natoque ultricies maecenas inceptos mollis facilisis leo, a at porttitor himenaeos dapibus fermentum 
-                varius aenean, bibendum justo congue feugiat netus nostra fusce erat. Cubilia vel 
-                class accumsan nec curae himenaeos neque, orci iaculis tincidunt sapien per ultrices eget molestie, velit quisque 
-                euismod hac diam sem.</p>
+            <br><h3>APARTEKO ESKAINTZAK!</h3>
+            <h4>(%33ko deskontuarekin)</h4><br>
+            <div class="aparteko">
+                <div class="eskaintza1"><br>
+                    <h4>Sony HT-G700</h4>
+                    <del>349.95€</del> <p>234.47€ !!!!</p>
+                    <img src="../irudiak/produktuak/produktu5.png" alt="">
+                </div>
+                <div class="eskaintza2"><br>
+                    <h4>Apple Watch Series 7</h4>
+                    <del>399.99€</del> <p> 267.99€ !!!!</p>
+                    <img src="../irudiak/produktuak/produktu18.png" alt="">
+                </div>
+            </div>
+
         </div>
-           </article>
+    </article>
     <footer class="footer">
         <?php require_once "footer_m.php" ?>
     </footer>
-    
+
 </body>
+
 </html>
