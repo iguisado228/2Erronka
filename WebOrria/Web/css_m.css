@@ -75,13 +75,21 @@ body {
     float: right;
     width: 40px;
     height: 4 0px;
+    margin-right: 20px;
+}
+.uk {
+    margin-top: 2%;
+    float: right;
+    width: 40px;
+    height: 4 0px;
+    margin-right: 20px;
 }
 
 #ikonoa {
     color: black;
     float: right;
     font-size: 200%;
-    margin-right: 3.5%;
+    margin-right: 20px;
     margin-top: 2%;
 }
 .ikonoak {
@@ -102,13 +110,20 @@ body {
         float: right;
         width: 70px;
         height: 70px;
+        margin-right: 20px;
     }
-    
+    .uk {
+        margin-top: 2%;
+        float: right;
+        width: 70px;
+        height: 70px;
+        margin-right: 20px;
+    }
     #ikonoa {
         color: black;
         float: right;
         font-size: 350%;
-        margin-right: 3.5%;
+        margin-right: 20px;
         margin-top: 2%;
     }
     .ikonoak {

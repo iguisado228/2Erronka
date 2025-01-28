@@ -2,7 +2,8 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <div class ="ikonoak">
-    <img class="ikurriña" src="../irudiak/ikurriña.png" alt="ikurriña" />
+    <a href="#" language="euskara" class="active"><img class="ikurriña" src="../irudiak/ikurriña.png" alt="ikurriña" /></a>
+    <a href="#" language="english"><img class="uk" src="../irudiak/uk.png" alt="uk"></a>
 
 <div class="menu-container">
         <div class="menu-icon">

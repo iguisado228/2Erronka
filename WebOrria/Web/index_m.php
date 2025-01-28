@@ -23,7 +23,7 @@
                 <div class="eskaintza1"><br>
                     <h4>Sony HT-G700</h4>
                     <del>349.95€</del> <p>234.47€ !!!!</p>
-                    <img src="../irudiak/produktuak/produktu5.png" alt="">
+                    <img src="../irudiak/produktuak/produktu5.png" alt=""/>
                 </div>
                 <div class="eskaintza2"><br>
                     <h4>Apple Watch Series 7</h4>
