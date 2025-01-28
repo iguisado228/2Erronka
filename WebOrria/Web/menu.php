@@ -18,7 +18,7 @@
         </div>
     </div>
     <i class="fa fa-user-circle-o" id="ikonoa" aria-hidden="true"></i>
-    <i class="fa fa-shopping-cart" id="ikonoa" aria-hidden="true"></i>
+    <a href="karritoa.php"><i class="fa fa-shopping-cart" id="ikonoa" aria-hidden="true"></i>
 
 </div>
 </div>
