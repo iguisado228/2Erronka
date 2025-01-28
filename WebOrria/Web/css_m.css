@@ -125,19 +125,53 @@ body {
 
 
 .eskaintza1{
-    background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5);
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    width: 30%;
+    box-sizing: border-box;
+    background-color: white;   
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    transition: background-color 0.3s ease;     
 }
+
+.eskaintza1 img{
+    width: 70%;
+    height: 80%;
+}
+
 .eskaintza2{
-    background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5);
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    width: 30%;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;  
+}
+
+.eskaintza2 img{
+    width: 70%;
+    height: 80%;
+}
+
+.eskaintza1:hover {
+    background-color: #8d8989; 
+    border-color: #666;
+}
+.eskaintza2:hover {
+    background-color: #8d8989; 
+    border-color: #666;
 }
 
 .aparteko {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: stretch; /*div guztiak altura berdina edukitzeko*/
+    gap: 16px;      
+    text-align: center;
 }
 
 
@@ -317,50 +351,42 @@ a {
     }
 }
 
-@media (max-width: 480px) {
-    .produktua {
-        width: 300px;
-        max-width: 480px;
-        height: 300px; /* Asegura espacio suficiente para centrar la imagen */
+@media (max-width: 600px) {
+    .produktuak {
+        width: 100%;
         display: flex;
-        justify-content: center; /* Centra horizontalmente */
-        align-items: center; /* Centra verticalmente */
-        overflow: hidden; /* Evita que imágenes grandes se desborden */
-    }
-    
-    .produktua img {
-        width: 80%;
-        max-width: 240px;
-        height: auto;
-        max-height: 200px;
-        display: block; /* Evita espacios vacíos debajo de la imagen */
-        
-    }
-
-    .aparteko {
-        width: 300px;
-        max-width: 300px;
-        height: 300px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
         overflow: hidden;
     }
 
+    .produktua {
+        width: 50%;
+        height: 50%;
+    }
+    
     .eskaintza1{
-        background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5);
-        margin: 2%;
-        padding: 2%;
-        border-radius: 10px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        
+        width: 100%;
+        margin: 20px;
+        overflow: hidden;
+        text-align: center;
     }
     .eskaintza2{
-        background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5);
-        margin: 2%;
-        padding: 2%;
-        border-radius: 10px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        margin: 20px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    
+    .eskaintza1 img{
+        width: 90%;
+        height: 60%;
+    }
+    .eskaintza2 img{
+        width: 80%;
+        height: 50%;
     }
 
 }
