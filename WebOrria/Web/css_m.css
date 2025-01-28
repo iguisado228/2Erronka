@@ -326,7 +326,7 @@ table, td, tr, th{
     margin: 2% auto;
     background-color: white;
     padding: 1%;
-    max-height: auto;
+    height: 100%;
     box-sizing: border-box;
 }
 
@@ -362,11 +362,11 @@ table, td, tr, th{
 
     .formularioa {
         border: 1px black solid;
-        width: 30%;
+        width: 45%;
         margin: 2% auto;
         background-color: white;
         padding: 1%;
-        height: 90%;
+        height: 100%;
         box-sizing: border-box;
         text-align: center;
     }
