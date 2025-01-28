@@ -278,19 +278,23 @@ table, td, tr, th{
     background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5)
 }
 
+/*mobilean formularioa ondo ikusteko*/
+@media (max-width:480px) {
+    
+
 .formularioa {
     border: 1px black solid;
-    width: 25%;
+    min-width: 70%;
     margin: 2% auto;
     background-color: white;
     padding: 1%;
-    height: auto;
+    height: 100%;
     box-sizing: border-box;
 }
 
 .formularioa .explikaziokaxa {
     width: 90%;
-    height: 50px;
+    height: 20%;
 }
 
 .formularioa>form>.kontaktatubotoiak {
@@ -299,6 +303,8 @@ table, td, tr, th{
     grid-template-columns: 40% 40%;
     grid-gap: 5%;
 }
+
+
 
 .formularioa>form>.kontaktatubotoiak>.bidalibotoia {
     background-color: lightgreen;
@@ -311,4 +317,47 @@ table, td, tr, th{
     margin: 2%;
     height: 120%;
 }
+}
+
+@media (min-width:480px) {
+    
+
+    .formularioa {
+        border: 1px black solid;
+        width: 45%;
+        margin: 2% auto;
+        background-color: white;
+        padding: 1%;
+        height: 100%;
+        box-sizing: border-box;
+        text-align: left;
+    }
+    
+    .formularioa .explikaziokaxa {
+        width: 90%;
+        height: 20%;
+    }
+    
+    .formularioa>form>.kontaktatubotoiak {
+        display: grid;
+        text-align: center;
+        grid-template-columns: 40% 40%;
+        grid-gap: 5%;
+    }
+    
+    
+    
+    .formularioa>form>.kontaktatubotoiak>.bidalibotoia {
+        background-color: lightgreen;
+        margin: 2%;
+        height: 120%;
+    }
+    
+    .formularioa>form>.kontaktatubotoiak>.ezabatubotoia {
+        background-color: rgb(255, 87, 87);
+        margin: 2%;
+        height: 120%;
+    }
+    }
+
 
