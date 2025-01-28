@@ -450,12 +450,14 @@ table, td, tr, th{
 
 .formularioa {
     border: 1px black solid;
-    min-width: 40%;
+    min-width: 50%;
+    width: 60%;
     margin: 2% auto;
     background-color: white;
     padding: 1%;
     height: 100%;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .formularioa .explikaziokaxa {
@@ -468,6 +470,7 @@ table, td, tr, th{
     text-align: center;
     grid-template-columns: 40% 40%;
     grid-gap: 5%;
+    margin-left: 15%;
 }
 
 
