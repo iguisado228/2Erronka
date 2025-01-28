@@ -29,7 +29,7 @@ body {
         grid-area: header; 
         background-color: #000B1F;
     }
-
+    
     .nav {
         grid-area: nav;
         background-color: lightgray;
@@ -62,6 +62,8 @@ body {
 
 
 /*Header-an dauden ikonoen eta enpresaren logoaren CSS-a*/
+
+@media (max-width:480px) {
 .logoa {
     width: 200px;
     height: 200px;
@@ -71,27 +73,56 @@ body {
 .ikurriña {
     margin-top: 2%;
     float: right;
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 4 0px;
 }
 
 #ikonoa {
     color: black;
     float: right;
-    font-size: 350%;
+    font-size: 200%;
     margin-right: 3.5%;
     margin-top: 2%;
 }
+.ikonoak {
+    text-align: center;
+    width: auto;
+}
+}
+
+@media (min-width:480px) {
+    .logoa {
+        width: 200px;
+        height: 200px;
+        box-shadow: 0px 0px 10px 0px #000B1F ;
+    } 
+    
+    .ikurriña {
+        margin-top: 2%;
+        float: right;
+        width: 70px;
+        height: 70px;
+    }
+    
+    #ikonoa {
+        color: black;
+        float: right;
+        font-size: 350%;
+        margin-right: 3.5%;
+        margin-top: 2%;
+    }
+    .ikonoak {
+        text-align: center;
+        width: auto;
+    }
+    }
 
 .content {
     background-color: lightblue;
     width: 100%;
 }
 
-.ikonoak {
-    text-align: center;
-    width: auto;
-}
+
 
 .eskaintza1{
     background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5);
@@ -117,8 +148,9 @@ body {
     float:left;
 }
 
+@media (max-width:480px){
 .menu-icon {
-    font-size: 300%;
+    font-size: 150%;
     cursor: pointer;
     margin: 20px;
     padding: 10px;
@@ -133,6 +165,7 @@ body {
 .menu-icon:hover {
     background-color: #0056b3;
 }
+
 
 .menu {
     display: none;
@@ -181,7 +214,76 @@ a {
     text-decoration: none;
     color: blue;
 }
+}
 
+@media (min-width:480px){
+    .menu-icon {
+        font-size: 300%;
+        cursor: pointer;
+        margin: 20px;
+        padding: 10px;
+        background-color: #007BFF;
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        transition: background 0.3s;
+    }
+    
+    .menu-icon:hover {
+        background-color: #0056b3;
+    }
+    
+    
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        padding: 20px;
+        left: 20px;
+        background-color: white;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        overflow: hidden;
+        min-width: 300%;
+        min-height: 250%;
+        font-size: 200%;
+        text-decoration: none;
+    }
+    
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .menu ul li {
+        list-style: none;
+        padding: 10%;
+        border-bottom: 1px solid #ddd;
+        cursor: pointer;
+        text-align: center;
+        font-weight: bold;
+        color: #007BFF;
+        transition: background 0.3s, color 0.3s;
+        text-decoration: none;
+    }
+    
+    .menu ul li:hover {
+        background-color: #007BFF;
+        color: white;
+    }
+    
+    .menu ul li:last-child {
+        border-bottom: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: blue;
+    }
+    }
+    
 
 /*Produktuen katalogorako estiloak*/
 
