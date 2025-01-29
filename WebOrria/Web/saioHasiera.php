@@ -171,16 +171,14 @@
             position: relative;
             background-color: #272D65;
             color: white;
-            padding: 20px;
             border-radius: 10px;
-            width: 30%;
+            width: 100%;
             height: 20%;
-            text-align: center;
             padding: 80px;
         }
 
-        .sesioHasiera {
-            width: 100%;
+        #login-container {
+            width: 30%;
         }
 
         .itxi {
@@ -191,6 +189,54 @@
             font-size: 30px;
             color: white;
         }
+
+        @media (max-width: 1100px){
+            #login-container {
+                margin-left: -100px;
+                width: 55%;
+                height: 35%;
+            }
+        }
+
+        @media (max-width: 600px){
+            #login-container {
+                margin-left: -120px;
+                width: 80%;
+                height: 50%;
+            }
+        }
+
+        @media (max-width: 500px){
+            #login-container {
+                margin-left: -100px;
+                width: 80%;
+                height: 50%;
+            }
+        }
+
+        @media (max-width: 400px){
+            #login-container {
+                margin-left: -100px;
+                width: 85%;
+                height: 50%;
+            }
+        }
+
+        @media (max-width: 350) {
+            #login-container {
+                margin-left: -85px;
+                width: 95%;
+                height: 50%;
+            }
+            .login-contenido {
+            padding: 10px;
+            margin: 10px;
+            margin-left: 100px;
+        }
+        }
+
+        
+
     </style>
 </head>
 <body>
