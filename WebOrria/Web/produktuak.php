@@ -23,7 +23,6 @@
         <article class="main">
             <div class="content">
                 <div class="botoia">
-                    <button class="karritoBo">Karritoa</button>
                     <div class="cart">
                         <h2>Karrito</h2>
                         <div id="cart-items">
@@ -73,7 +72,7 @@
 
 
         $(document).ready(function () {
-            $(".karritoaBo").click(function () {
+            $(".karritoa").click(function () {
                 $(".cart").slideToggle(300);
                 const cart = [];
                 const cartElement = document.getElementById("cart-items");
@@ -114,8 +113,8 @@
                 }
             });
 
-            $(document).click(function (event) {
-                if (!$(event.target).closest(".botoia").length) {
+            $(".karritoa").click(function (event) {
+                if (!$(event.target).closest(".karritoa").length) {
                     $(".cart").slideUp(300);
                 }
             });
