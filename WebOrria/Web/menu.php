@@ -18,13 +18,11 @@
         }
     </style>
 </head>
-<div class ="ikonoak">
-    <a href="#" language="euskara" class="active"><img class="ikurriña" src="../irudiak/ikurriña.png" alt="ikurriña" /></a>
-    <a href="#" language="english"><img class="uk" src="../irudiak/uk.png" alt="uk"></a>
 
 <body>
     <div class="ikonoak">
-        <img class="ikurriña" src="../irudiak/ikurriña.png" alt="ikurriña" />
+    <a href="#" language="euskara" class="active"><img class="ikurriña" src="../irudiak/ikurriña.png" alt="ikurriña" /></a>
+    <a href="#" language="english"><img class="uk" src="../irudiak/uk.png" alt="uk"></a>
 
         <div class="menu-container">
             <div class="menu-icon">
@@ -40,11 +38,9 @@
             </div>
         </div>
         <a class="right" href="#"><i class="fa fa-user-circle-o" id="ikonoa" aria-hidden="true"></i></a>
-        <i class="fa fa-shopping-cart" id="ikonoa" aria-hidden="true"></i>
+        <a href="karritoa.php"></a><i class="fa fa-shopping-cart" id="ikonoa" aria-hidden="true"></i>
     </div>
-    <i class="fa fa-user-circle-o" id="ikonoa" aria-hidden="true"></i>
-    <a href="karritoa.php"><i class="fa fa-shopping-cart" id="ikonoa" aria-hidden="true"></i>
-
+    
     <!-- kontenedore honetan, Saio hasiera kargatuko da -->
     <div id="login-container">
         <div id="login-content"></div>
