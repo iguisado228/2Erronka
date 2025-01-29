@@ -20,6 +20,14 @@
 
     </nav>
     <div class="content">
+    <div class="botoia">
+                <div class="cart">
+                    <h2>Karrito</h2>
+                    <div id="cart-items">
+                        <p>Karritoa hutsik dago.</p>
+                    </div>
+                </div>
+    </div>
 
         <div class="formularioa">
             <form action="" method="get">
@@ -67,6 +75,9 @@
         </table>
 
     </div>
+    <?php
+    require_once("karritoa.php")
+    ?>
 
     <footer class="footer">
         <?php require_once "footer_m.php" ?>

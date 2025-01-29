@@ -333,7 +333,8 @@ a {
     box-sizing: border-box;
     background-color: white;   
     border-radius: 8px;
-    transition: background-color 0.3s ease;    
+    transition: background-color 0.3s ease;   
+    overflow: hidden; 
 }
 .produktua:hover {
     background-color: #8d8989; 
@@ -537,14 +538,25 @@ table, td, tr, th{
         height: 6%;
         border-collapse: collapse;
         cursor: pointer;
-        margin-bottom: 0;
-        bottom:0;
+        bottom:0px;
     }
+    @media (max-width:480px){
     .remove-from-cart{
         background-color: red;
         border:1px solid black;
         border-collapse: collapse;
-        width: 10%;
+        min-width: 10%;
+        width: 30%;
         height: 15%;
     }
+}
+    @media (min-width:480px){
+        .remove-from-cart{
+    background-color: red;
+    border:1px solid black;
+    border-collapse: collapse;
+    width: 10%;
+    height: 15%;
+}
+}
 

@@ -17,6 +17,14 @@
     </nav>
     <article class="main">
         <div class="content">
+            <div class="botoia">
+                <div class="cart">
+                    <h2>Karrito</h2>
+                    <div id="cart-items">
+                        <p>Karritoa hutsik dago.</p>
+                    </div>
+                </div>
+            </div>
             <br>
             <h3>APARTEKO ESKAINTZAK!</h3>
             <h4>(%33ko deskontuarekin)</h4><br>
@@ -47,13 +55,16 @@
     <script type="text/javascript"
         src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-    
+
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({ pageLanguage: 'es', includedLanguages: 'eu,en,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true }, 'google_translate_element');
         }
     </script>
+    <?php
+    require_once("karritoa.php")
+        ?>
 </body>
-    
+
 
 </html>
