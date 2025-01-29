@@ -2,10 +2,10 @@
 <html>
 <head>
     <link rel="stylesheet" href="css_m.css">
-</head>
+    </head>
 <body>
 <div class="header">
-    <a href="index_m.php"><img class="logoa" src="../irudiak/erronka2Logoa.jpg" /></a>
+    <a href="index_m.php"><img class="logoa" src="../irudiak/ikonoa.png" /></a>
 </div>
 </body>
 
