@@ -68,49 +68,63 @@
 
 
     <script>
-
-
-
         $(document).ready(function () {
-            $(".karritoa").click(function () {
-                $(".cart").slideToggle(300);
-                const cart = [];
-                const cartElement = document.getElementById("cart-items");
-                document.querySelector(".content").addEventListener("click", (event) => {
-                    if (event.target.classList.contains("add-to-cart")) {
-                        const productElement = event.target.closest(".produktua");
-                        const product = {
-                            id: productElement.dataset.id,
-                            name: productElement.dataset.name,
-                            price: parseFloat(productElement.dataset.price)
-                        };
+            const cart = [];
+            const cartElement = document.getElementById("cart-items");
 
-                        addToCart(product);
-                    }
-                });
+            document.querySelector(".content").addEventListener("click", (event) => {
+                if (event.target.classList.contains("add-to-cart")) {
+                    const productElement = event.target.closest(".produktua");
+                    const product = {
+                        id: productElement.dataset.idproduktua,
+                        name: productElement.dataset.name,
+                        price: parseFloat(productElement.dataset.price)
+                    };
 
-                function addToCart(product) {
-                    cart.push(product);
+                    addToCart(product);
+                }
+
+                if (event.target.classList.contains("remove-from-cart")) {
+                    const productId = event.target.dataset.id;
+                    removeFromCart(productId);
+                }
+            });
+
+            function addToCart(product) {
+                cart.push(product);
+                renderCart();
+            }
+
+            function removeFromCart(productId) {
+                const index = cart.findIndex(item => item.id === productId);
+                if (index !== -1) {
+                    cart.splice(index, 1);
                     renderCart();
                 }
+            }
 
-                function renderCart() {
-                    if (cart.length === 0) {
-                        cartElement.innerHTML = "<p>Karritoa hutsik dago.</p>";
-                        return;
-                    }
-
-                    const cartItems = cart.map(item => `
-                <p>${item.name} - ${item.price.toFixed(2)}€</p>
-            `).join("");
-
-                    cartElement.innerHTML = `
-                <h3>Produktuak karritoan:</h3>
-                ${cartItems}
-                <p><strong>Guztira: ${cart.reduce((total, item) => total + item.price, 0).toFixed(2)}€</strong></p>
-            `;
-
+            function renderCart() {
+                if (cart.length === 0) {
+                    cartElement.innerHTML = "<p>Karritoa hutsik dago.</p>";
+                    return;
                 }
+
+                const cartItems = cart.map(item => `
+                    <p>
+                        ${item.name} - ${item.price.toFixed(2)}€ 
+                        <button class="remove-from-cart" data-id="${item.id}">Kendu</button>
+                    </p>
+                `).join("");
+
+                cartElement.innerHTML = `
+                    <h3>Produktuak karritoan:</h3>
+                    ${cartItems}
+                    <p><strong>Guztira: ${cart.reduce((total, item) => total + item.price, 0).toFixed(2)}€</strong></p>
+                `;
+            }
+
+            $(".karritoa").click(function () {
+                $(".cart").slideToggle(300);
             });
 
             $(".karritoa").click(function (event) {

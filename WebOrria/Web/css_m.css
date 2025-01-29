@@ -555,6 +555,7 @@ table, td, tr, th{
         border: 2px solid #000;
         padding: 10px;
         margin-top: 20px;
+        background-color: lightgreen;
     }
 
     .produktua>.add-to-cart {
@@ -567,9 +568,11 @@ table, td, tr, th{
         margin-bottom: 0;
         bottom:0;
     }
-    .karritoBo{
-        background-color: green;
-        float: right;
-        width:10%;
+    .remove-from-cart{
+        background-color: red;
+        border:1px solid black;
+        border-collapse: collapse;
+        width: 10%;
+        height: 15%;
     }
 
