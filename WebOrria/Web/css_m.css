@@ -456,7 +456,8 @@ table, td, tr, th{
     background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5)
 }
 .paketearenJarraipena{
-    background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5)
+    background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5);
+    margin-bottom: 5%;
 }
 
 /*mobilean formularioa ondo ikusteko*/
