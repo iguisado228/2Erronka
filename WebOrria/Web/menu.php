@@ -19,23 +19,26 @@
     </style>
 </head>
 
+
+
 <body>
-    <div class="ikonoak">
-    <a href="#" language="euskara" class="active"><img class="ikurriña" src="../irudiak/ikurriña.png" alt="ikurriña" /></a>
+
+    <div class="ikonoak"></div>
+    <a href="#" language="euskara" class="active"><img class="ikurriña" src="../irudiak/ikurriña.png"
+            alt="ikurriña" /></a>
     <a href="#" language="english"><img class="uk" src="../irudiak/uk.png" alt="uk"></a>
 
-        <div class="menu-container">
-            <div class="menu-icon">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index_m.php">Hasiera</a></li>
-                    <li><a href="produktuak.php">Produktuak</a></li>
-                    <li><a href="kontaktua.php">Kontaktua</a></li>
-                    <li><a href="zerbitzuak.php">Zerbitzuak</a></li>
-                </ul>
-            </div>
+    <div class="menu-container">
+        <div class="menu-icon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index_m.php">Hasiera</a></li>
+                <li><a href="produktuak.php">Produktuak</a></li>
+                <li><a href="kontaktua.php">Kontaktua</a></li>
+                <li><a href="zerbitzuak.php">Zerbitzuak</a></li>
+            </ul>
         </div>
         <a class="right" href="#"><i class="fa fa-user-circle-o" id="ikonoa" aria-hidden="true"></i></a>
         <a href="karritoa.php"></a><i class="fa fa-shopping-cart" id="ikonoa" aria-hidden="true"></i>
