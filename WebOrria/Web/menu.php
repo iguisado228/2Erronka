@@ -40,11 +40,10 @@
                 <li><a href="zerbitzuak.php">Zerbitzuak</a></li>
             </ul>
         </div>
+        <a class="right" href="#"><i class="fa fa-user-circle-o" id="ikonoa" aria-hidden="true"></i></a>
+        <a href="karritoa.php"></a><i class="fa fa-shopping-cart" id="ikonoa" aria-hidden="true"></i>
     </div>
-    <a class="right" href="#"><i class="fa fa-user-circle-o" id="ikonoa" aria-hidden="true"></i></a>
-    <a href="karritoa.php"> <i class="fa fa-shopping-cart" id="ikonoa" aria-hidden="true"></i></a>
-    </div>
-
+    
     <!-- kontenedore honetan, Saio hasiera kargatuko da -->
     <div id="login-container">
         <div id="login-content"></div>

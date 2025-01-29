@@ -17,19 +17,23 @@
     </nav>
     <article class="main">
         <div class="content">
-            <br><h3>APARTEKO ESKAINTZAK!</h3>
+            <br>
+            <h3>APARTEKO ESKAINTZAK!</h3>
             <h4>(%33ko deskontuarekin)</h4><br>
             <div class="aparteko">
                 <div class="eskaintza1"><br>
                     <h4>Sony HT-G700</h4>
-                    <del>349.95€</del> <p>234.47€ !!!!</p>
-                    <img src="../irudiak/produktuak/produktu5.png" alt=""/>
+                    <del>349.95€</del>
+                    <p>234.47€ !!!!</p>
+                    <img src="../irudiak/produktuak/produktu5.png" alt="" />
                 </div>
                 <div class="eskaintza2"><br>
                     <h4>Apple Watch Series 7</h4>
-                    <del>399.99€</del> <p> 267.99€ !!!!</p>
+                    <del>399.99€</del>
+                    <p> 267.99€ !!!!</p>
                     <img src="../irudiak/produktuak/produktu18.png" alt="">
                 </div>
+                <div id="google_translate_element" class="google"></div>
             </div>
 
         </div>
@@ -38,6 +42,18 @@
         <?php require_once "footer_m.php" ?>
     </footer>
 
+
+
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'es', includedLanguages: 'eu,en,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true }, 'google_translate_element');
+        }
+    </script>
 </body>
+    
 
 </html>
