@@ -5,7 +5,7 @@
 </head>
 <body>
 <div class="header">
-    <img class="logoa" src="../irudiak/erronka2Logoa.jpg" />
+    <a href="index_m.php"><img class="logoa" src="../irudiak/erronka2Logoa.jpg" /></a>
 </div>
 </body>
 

@@ -208,8 +208,11 @@
         </div>
         <input type="submit" value="Saioa Hasi">
         <div class="erregistratu">
-            <a href="#">Erregistratu</a> egin nahi dut.
+            <a href="erabiltzaileaErregistratu.php">Erregistratu</a> egin nahi dut.
         </div>
     </form>
 </div>
+<?php
+
+?>
 </body>

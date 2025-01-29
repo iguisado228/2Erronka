@@ -18,7 +18,7 @@ body {
     display: grid;
     grid-template: 
     "header" 20%
-    "nav" 20%
+    "nav" 5%
     "main" 40%
     "footer" 20%; 
     background-color: lightgrey;
@@ -28,11 +28,13 @@ body {
     .header {
         grid-area: header; 
         background-color: #000B1F;
+        box-shadow: 5px 5px 5px 5px ;
     }
     
     .nav {
         grid-area: nav;
         background-color: lightgray;
+        box-shadow: 5px 5px 5px 5px ;
         
     }
     .main {
@@ -63,7 +65,7 @@ body {
 
 /*Header-an dauden ikonoen eta enpresaren logoaren CSS-a*/
 
-@media (max-width:480px) {
+@media (max-width:600px) {
 .logoa {
     width: 200px;
     height: 200px;
@@ -71,26 +73,29 @@ body {
 } 
 
 .ikurriña {
-    margin-top: 2%;
     float: right;
-    width: 40px;
-    height: 4 0px;
-    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    margin: 10px;
+    padding: 5px;
 }
 .uk {
-    margin-top: 2%;
     float: right;
-    width: 40px;
-    height: 4 0px;
-    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    margin: 10px;
+    padding: 5px;
 }
 
 #ikonoa {
     color: black;
     float: right;
-    font-size: 200%;
-    margin-right: 20px;
-    margin-top: 2%;
+    font-size: 250%;
+    margin-right: 10px;
+    margin: 10px;
+    padding: 5px;
 }
 .ikonoak {
     text-align: center;
@@ -98,7 +103,7 @@ body {
 }
 }
 
-@media (min-width:480px) {
+@media (min-width:600px) {
     .logoa {
         width: 200px;
         height: 200px;
@@ -106,25 +111,25 @@ body {
     } 
     
     .ikurriña {
-        margin-top: 2%;
+        margin: 20px;
+        padding: 10px;
         float: right;
         width: 70px;
         height: 70px;
-        margin-right: 20px;
     }
     .uk {
-        margin-top: 2%;
+        margin: 20px;
+        padding: 10px;
         float: right;
         width: 70px;
         height: 70px;
-        margin-right: 20px;
     }
     #ikonoa {
+        margin: 20px;
+        padding: 10px;
         color: black;
         float: right;
-        font-size: 350%;
-        margin-right: 20px;
-        margin-top: 2%;
+        font-size: 250%;
     }
     .ikonoak {
         text-align: center;
@@ -200,9 +205,9 @@ body {
     float:left;
 }
 
-@media (max-width:480px){
+@media (max-width:600px){
 .menu-icon {
-    font-size: 150%;
+    font-size: 170%;
     cursor: pointer;
     margin: 20px;
     padding: 10px;
@@ -223,14 +228,16 @@ body {
     display: none;
     position: absolute;
     top: 100%;
-    padding: 20px;
-    left: 20px;
     background-color: white;
+    padding-right: 60px;
+    margin-left: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     overflow: hidden;
-    min-width: 300%;
-    min-height: 250%;
+    text-align: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 50%;
     font-size: 200%;
     text-decoration: none;
 }
@@ -243,7 +250,7 @@ body {
 
 .menu ul li {
     list-style: none;
-    padding: 10%;
+    padding: 12%;
     border-bottom: 1px solid #ddd;
     cursor: pointer;
     text-align: center;
@@ -268,9 +275,9 @@ a {
 }
 }
 
-@media (min-width:480px){
+@media (min-width:600px){
     .menu-icon {
-        font-size: 300%;
+        font-size: 250%;
         cursor: pointer;
         margin: 20px;
         padding: 10px;
@@ -456,13 +463,13 @@ table, td, tr, th{
     background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5)
 }
 .paketearenJarraipena{
-    background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5)
+    background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5);
+    margin-bottom: 5%;
 }
 
 /*mobilean formularioa ondo ikusteko*/
-@media (max-width:480px) {
+@media (max-width:600px) {
     
-
 .formularioa {
     border: 1px black solid;
     min-width: 50%;
@@ -503,7 +510,7 @@ table, td, tr, th{
 }
 }
 
-@media (min-width:480px) {
+@media (min-width:600px) {
     
 
     .formularioa {
