@@ -42,7 +42,9 @@
         </div>
     </div>
     <a class="right" href="#"><i class="fa fa-user-circle-o" id="ikonoa" aria-hidden="true"></i></a>
-    <a href="karritoa.php"> <i class="fa fa-shopping-cart" id="ikonoa" aria-hidden="true"></i></a>
+    <div class="karritoa">
+        <i class="fa fa-shopping-cart" id="ikonoa" aria-hidden="true"></i>
+        
     </div>
 
     <!-- kontenedore honetan, Saio hasiera kargatuko da -->
