@@ -35,6 +35,7 @@ body {
         grid-area: nav;
         background-color: lightgray;
         box-shadow: 5px 5px 5px 5px ;
+        padding: 0 20px;
         
     }
     .main {
@@ -71,35 +72,19 @@ body {
     height: 200px;
     box-shadow: 0px 0px 10px 0px #000B1F ;
 } 
-
-.ikurriña {
-    float: right;
-    width: 60px;
-    height: 60px;
-    margin-right: 10px;
-    margin: 10px;
-    padding: 5px;
+.karritoa {
+        position: relative;
+        float: right;
+        font-size: 35px;
+        margin-right:20px;
+        margin-top: 30px;
 }
-.uk {
-    float: right;
-    width: 60px;
-    height: 60px;
-    margin-right: 10px;
-    margin: 10px;
-    padding: 5px;
-}
-
-#ikonoa {
-    color: black;
-    float: right;
-    font-size: 250%;
-    margin-right: 10px;
-    margin: 10px;
-    padding: 5px;
-}
-.ikonoak {
-    text-align: center;
-    width: auto;
+.right {
+        position: relative;
+        font-size: 45px;
+        float: right;
+        margin-top: 25px;
+        text-decoration: none;
 }
 }
 
@@ -109,37 +94,24 @@ body {
         height: 200px;
         box-shadow: 0px 0px 10px 0px #000B1F ;
     } 
-    
-    .ikurriña {
-        margin: 20px;
-        padding: 10px;
+    .karritoa {
+        position: relative;
         float: right;
-        width: 70px;
-        height: 70px;
+        font-size: 35px;
+        margin-right:20px;
+        margin-top: 30px;
     }
-    .uk {
-        margin: 20px;
-        padding: 10px;
+    .right {
+        position: relative;
+        font-size: 45px;
         float: right;
-        width: 70px;
-        height: 70px;
-    }
-    #ikonoa {
-        margin: 20px;
-        padding: 10px;
-        color: black;
-        float: right;
-        font-size: 250%;
-    }
-    .ikonoak {
-        text-align: center;
-        width: auto;
+        margin-top: 25px;
+        text-decoration: none;
     }
     }
 
 .content {
     background-color: lightblue;
-    width: 100%;
 }
 
 
@@ -227,7 +199,6 @@ body {
 .menu {
     display: none;
     position: absolute;
-    top: 100%;
     background-color: white;
     padding-right: 60px;
     margin-left: 20px;
@@ -297,15 +268,14 @@ a {
     .menu {
         display: none;
         position: absolute;
-        top: 100%;
         padding: 20px;
-        left: 20px;
+        margin-left: 30px;
         background-color: white;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
         overflow: hidden;
-        min-width: 300%;
-        min-height: 250%;
+        min-width: 150%;
+        min-height: 150%;
         font-size: 200%;
         text-decoration: none;
     }
@@ -318,7 +288,7 @@ a {
     
     .menu ul li {
         list-style: none;
-        padding: 10%;
+        padding: 20px;
         border-bottom: 1px solid #ddd;
         cursor: pointer;
         text-align: center;
@@ -430,9 +400,11 @@ a {
 .eskainitakoZerbitzuak{
     display: grid;
     grid-template-areas:
-        ' garraioZerbitzua'
-         'bezeroarenArreta'
-        ' paketearenJarraipena'; 
+        'header'
+        'nav'
+        'garraioZerbitzua'
+        'bezeroarenArreta'
+        'paketearenJarraipena'; 
         
     width: 70%;
     font-size: 150%;
