@@ -72,12 +72,19 @@ body {
     height: 200px;
     box-shadow: 0px 0px 10px 0px #000B1F ;
 } 
-#ikonoa {
-    margin: 10px;
-    padding: 5px;
-    color: black;
-    font-size: 250%;
-    
+.karritoa {
+        position: relative;
+        float: right;
+        font-size: 35px;
+        margin-right:20px;
+        margin-top: 30px;
+}
+.right {
+        position: relative;
+        font-size: 45px;
+        float: right;
+        margin-top: 25px;
+        text-decoration: none;
 }
 }
 
@@ -87,18 +94,24 @@ body {
         height: 200px;
         box-shadow: 0px 0px 10px 0px #000B1F ;
     } 
-    #ikonoa {
-        margin: 10px;
-        padding: 5px;
-        color: black;
-        font-size: 250%;
-        margin-left: auto;
+    .karritoa {
+        position: relative;
+        float: right;
+        font-size: 35px;
+        margin-right:20px;
+        margin-top: 30px;
+    }
+    .right {
+        position: relative;
+        font-size: 45px;
+        float: right;
+        margin-top: 25px;
+        text-decoration: none;
     }
     }
 
 .content {
     background-color: lightblue;
-    width: 100%;
 }
 
 
@@ -387,9 +400,11 @@ a {
 .eskainitakoZerbitzuak{
     display: grid;
     grid-template-areas:
-        ' garraioZerbitzua'
-         'bezeroarenArreta'
-        ' paketearenJarraipena'; 
+        'header'
+        'nav'
+        'garraioZerbitzua'
+        'bezeroarenArreta'
+        'paketearenJarraipena'; 
         
     width: 70%;
     font-size: 150%;
