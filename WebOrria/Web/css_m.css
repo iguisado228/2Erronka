@@ -40,11 +40,12 @@ body {
         padding: 10px;
         min-height: 50px;
     }
-    .main {
+    .content>.main {
         grid-area: main;
         background-color: lightblue;
         padding: 20px;
         min-height: 400px;
+        margin-top: 5%;
     }
     
 
@@ -119,6 +120,7 @@ body {
 
 .content {
     background-color: lightblue;
+
 }
 
 

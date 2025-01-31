@@ -40,7 +40,7 @@ if (isset($_POST["erregistratu"])) {
     </style>
 </head>
 
-<body>
+<body class="grid-container">
     <header class="header">
         <?php require_once "header_m.php" ?>
     </header>
@@ -48,6 +48,13 @@ if (isset($_POST["erregistratu"])) {
         <?php require_once "menu.php" ?>
     </nav>
     <div class="content">
+    <div class="botoia">
+                <div class="cart">
+                    <h2>Karrito</h2>
+                    <div id="cart-items">
+                        <p>Karritoa hutsik dago.</p>
+                    </div>
+                </div>
         <article class="main">
 
             <form method="post" action="erabiltzaileaErregistratu.php" class="ERformularioa">
@@ -89,6 +96,9 @@ if (isset($_POST["erregistratu"])) {
     </footer>
     <?php
     $conn->close();
+    ?>
+    <?php
+    require_once("karritoa.php");
     ?>
 </body>
 
