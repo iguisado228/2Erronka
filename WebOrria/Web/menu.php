@@ -22,7 +22,14 @@
 
 
 <body>
-     
+
+    <?php
+
+    session_start();
+
+
+    ?>
+
 
     <div class="menu-container">
         <div class="menu-icon">
@@ -37,13 +44,17 @@
             </ul>
         </div>
     </div>
+    <?php if (isset($_SESSION['erabiltzailea'])) {
+        echo htmlspecialchars($_SESSION['erabiltzailea']);
+    } ?>
+    <a href="saioaItxi.php">Saioa amaitu</a>
     <a class="right" href="#"><i class="fa fa-user-circle-o" id="ikonoa" aria-hidden="true"></i></a>
     <div class="karritoa">
         <i class="fa fa-shopping-cart" id="ikonoa" aria-hidden="true"></i>
     </div>
-    
 
-    
+
+
     <!-- kontenedore honetan, Saio hasiera kargatuko da -->
     <div id="login-container">
         <div id="login-content"></div>

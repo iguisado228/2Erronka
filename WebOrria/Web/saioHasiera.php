@@ -285,9 +285,7 @@
                 .done(function (bueltatutakoInfo) {
                     var datuak = JSON.parse(bueltatutakoInfo);
                     if (datuak.kopurua > 0) {
-                        for (var i = 0; i < datuak.kopurua; i++) {
-                            window.location.href = 'index_m.php?id=' + '&erabiltzailea=' + datuak[i].Erabiltzailea + '';
-                        }
+                        window.location.href = 'index_m.php';
                     } else {
                         alert("Erabiltzailea edo pasahitza ez da zuzena.");
                     }
@@ -296,5 +294,6 @@
                     alert("Errore bat egon da");
                 });
         }
+
     </script>
 </body>
