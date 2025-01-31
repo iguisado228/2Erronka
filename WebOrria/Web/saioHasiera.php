@@ -190,7 +190,7 @@
             color: white;
         }
 
-        @media (max-width: 1100px){
+        @media (max-width: 1100px) {
             #login-container {
                 margin-left: -100px;
                 width: 55%;
@@ -198,7 +198,7 @@
             }
         }
 
-        @media (max-width: 600px){
+        @media (max-width: 600px) {
             #login-container {
                 margin-left: -120px;
                 width: 80%;
@@ -206,7 +206,7 @@
             }
         }
 
-        @media (max-width: 500px){
+        @media (max-width: 500px) {
             #login-container {
                 margin-left: -100px;
                 width: 80%;
@@ -214,7 +214,7 @@
             }
         }
 
-        @media (max-width: 400px){
+        @media (max-width: 400px) {
             #login-container {
                 margin-left: -100px;
                 width: 85%;
@@ -228,37 +228,73 @@
                 width: 95%;
                 height: 50%;
             }
+
             .login-contenido {
-            padding: 10px;
-            margin: 10px;
-            margin-left: 100px;
+                padding: 10px;
+                margin: 10px;
+                margin-left: 100px;
+            }
         }
-        }
-
-        
-
     </style>
 </head>
-<body>
-<div class="lehioa-contenido">
-    <a href="#" class="itxi">&times;</a>
-    <h1>Saio Hasiera</h1>
-    <form method="POST">
-        <div class="erabiltzailea">
-            <input class="sesioHasiera" type="text" id="erabiltzailea" name="erabiltzailea" required />
-            <label for="erabiltzailea">Erabiltzailea</label>
-        </div>
-        <div class="pasahitza">
-            <input class="sesioHasiera" type="password" id="pasahitza" name="pasahitza" required />
-            <label for="pasahitza">Pasahitza</label>
-        </div>
-        <input type="submit" value="Saioa Hasi">
-        <div class="erregistratu">
-            <a href="erabiltzaileaErregistratu.php">Erregistratu</a> egin nahi dut.
-        </div>
-    </form>
-</div>
-<?php
 
-?>
+<body>
+    <div class="lehioa-contenido">
+        <a href="#" class="itxi">&times;</a>
+        <h1>Saio Hasiera</h1>
+        <form method="POST">
+            <div class="erabiltzailea">
+                <input class="sesioHasiera" type="text" id="erabiltzailea" name="erabiltzailea" required />
+                <label for="erabiltzailea">Erabiltzailea</label>
+            </div>
+            <div class="pasahitza">
+                <input class="sesioHasiera" type="password" id="pasahitza" name="pasahitza" required />
+                <label for="pasahitza">Pasahitza</label>
+            </div>
+            <input type="submit" value="Saioa Hasi" id="bidali" />
+            <div class="erregistratu">
+                <a href="erabiltzaileaErregistratu.php">Erregistratu</a> egin nahi dut.
+            </div>
+        </form>
+    </div>
+    <?php
+
+    ?>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#bidali").on("click", function (e) {
+                e.preventDefault();
+                login();
+            });
+
+
+
+        });
+        function login() {
+            var erabiltzailea = $("#erabiltzailea").val();
+            var pasahitza = $("#pasahitza").val();
+
+            $.ajax({
+                url: "loginEgiaztatu.php",
+                type: "GET",
+                data: { erabiltzailea: erabiltzailea, pasahitza: pasahitza }
+            })
+                .done(function (bueltatutakoInfo) {
+                    var datuak = JSON.parse(bueltatutakoInfo);
+                    if (datuak.kopurua > 0) {
+                        for (var i = 0; i < datuak.kopurua; i++) {
+                            window.location.href = 'index_m.php?id=' + '&erabiltzailea=' + datuak[i].Erabiltzailea + '';
+                        }
+                    } else {
+                        alert("Erabiltzailea edo pasahitza ez da zuzena.");
+                    }
+                })
+                .fail(function () {
+                    alert("Errore bat egon da");
+                });
+        }
+    </script>
 </body>
