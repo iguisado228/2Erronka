@@ -49,7 +49,9 @@
                         echo "<h2 class='produktuIzena'>" . $row["izena"] . "</h2>";
                         echo "<p class='produktuPrezioa'>Prezioa: " . $row["prezioa"] . "€</p>";
                         echo "<img src='../irudiak/produktuak/" . $row["irudia"] . "' >";
+                        echo "<div class='gehituBotoia'>";
                         echo "<button class='add-to-cart'>Gehitu karritora</button>";
+                        echo "</div>";
                         echo "</div>";
                     }
                     echo "</div>";
