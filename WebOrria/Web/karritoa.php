@@ -59,12 +59,12 @@ $(document).ready(function () {
         `;
     }
 
-    $(".karritoa").click(function () {
+    $("#karritoa").click(function () {
         $(".cart").slideToggle(300);
     });
 
-    $(".karritoa").click(function (event) {
-        if (!$(event.target).closest(".karritoa").length) {
+    $("#karritoa").click(function (event) {
+        if (!$(event.target).closest("#karritoa").length) {
             $(".cart").slideUp(300);
         }
     });
