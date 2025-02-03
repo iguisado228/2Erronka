@@ -38,7 +38,7 @@
                 <label for="abizena">Abizena</label>
                 <input type="text" name="abizena" id="abizena"> <br> <br>
                 <label for="telefonoa">Telefonoa*</label>
-                <input type="tel" name="telefonoa" id="telefonoa" placeholder="+34 6xxxxxxx" required> <br> <br>
+                <input type="text" name="telefonoa" id="telefonoa" placeholder="+34 6xxxxxxx" required> <br> <br>
                 <label for="emaila">Emaila*</label>
                 <input type="email" name="emaila" id="emaila" pattern=".+@.+\..+" required> <br> <br>
 
@@ -53,7 +53,7 @@
                 <label for="informazioajaso">Email bidez</label> <br> <br>
 
                 <label for="errorea">Akats mota*</label>
-                <select id="arazoa" class="arazoa">
+                <select class="arazoa">
                     <option disabled selected>Arazoa</option>
                     <option value="bueltatu">Gailua bueltatu nahi dut</option>
                     <option value="konponketa">Arazo bat konpondu nahi du</option>
