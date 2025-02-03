@@ -41,25 +41,12 @@
                     <p> 267.99€ !!!!</p>
                     <img src="../irudiak/produktuak/produktu18.png" alt="">
                 </div>
-                
-
         </div>
     </article>
     <footer class="footer">
         <?php require_once "footer_m.php" ?>
     </footer>
 
-
-
-    <script type="text/javascript"
-        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({ pageLanguage: 'es', includedLanguages: 'eu,en,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true }, 'google_translate_element');
-        }
-    </script>
     <?php
     require_once("karritoa.php")
         ?>
