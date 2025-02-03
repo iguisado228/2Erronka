@@ -41,8 +41,7 @@
                     <p> 267.99€ !!!!</p>
                     <img src="../irudiak/produktuak/produktu18.png" alt="">
                 </div>
-                <div id="google_translate_element" class="google"></div>
-            </div>
+                
 
         </div>
     </article>

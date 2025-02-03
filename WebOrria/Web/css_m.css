@@ -177,7 +177,6 @@ body {
 
 
 
-
 /*Ezkerreko 3 barren menuaren CSS-a hau klikatuta menu bat agertu dezan bere CSS-arekin*/
 
 .menu-container {
@@ -536,8 +535,10 @@ table, td, tr, th{
     .cart {
         border: 2px solid #000;
         padding: 10px;
-        
+        position:sticky;
         background-color: lightgreen;
+        width: 30%;
+        
         
     }
 
