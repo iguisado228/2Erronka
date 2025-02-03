@@ -84,7 +84,7 @@ body {
     color: inherit;
     text-decoration: none;
 }
-.right {
+.saioaHasi {
         position: relative;
         font-size: 45px;
         float: right;
@@ -492,8 +492,8 @@ table, td, tr, th{
     
 .formularioa {
     border: 1px black solid;
-    min-width: 40%;
-    width: 80%;
+    min-width: 50%;
+    width: 60%;
     margin: 2% auto;
     background-color: white;
     padding: 1%;
@@ -505,10 +505,6 @@ table, td, tr, th{
 .formularioa .explikaziokaxa {
     width: 90%;
     height: 20%;
-}
-.arazoa{
-    min-width: 40%;
-    width:50%;
 }
 
 .formularioa>form>.kontaktatubotoiak {
@@ -543,11 +539,10 @@ table, td, tr, th{
         margin: 2% auto;
         background-color: white;
         padding: 1%;
-        height: 93%;
+        height: 83%;
         box-sizing: border-box;
         text-align: center;
-        margin-bottom: 10%;
-        bottom:10%;
+        margin-bottom: 5%;
     }
     
     .formularioa .explikaziokaxa {
@@ -589,12 +584,13 @@ table, td, tr, th{
         min-height: 40%;
         font-size: 100%;
         text-decoration: none;
-
+        border:1px solid black;
         
         
     }
 
-    .gehituBotoia>.add-to-cart {
+  
+    .add-to-cart {
         background-color: #28a745;
         color: white;
         width: 100%;
@@ -603,6 +599,7 @@ table, td, tr, th{
         cursor: pointer;
         top: 50%;
 
+        bottom:0%;
     }
     @media (max-width:480px){
     .remove-from-cart{
@@ -610,7 +607,7 @@ table, td, tr, th{
         border:1px solid black;
         border-collapse: collapse;
         min-width: 10%;
-        width: 50%;
+        width: 30%;
         height: 15%;
     }
 }
@@ -619,9 +616,8 @@ table, td, tr, th{
     background-color: red;
     border:1px solid black;
     border-collapse: collapse;
-    width: 20%;
+    width: 10%;
     height: 15%;
-    
 }
 }
 

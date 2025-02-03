@@ -44,12 +44,21 @@
             </ul>
         </div>
     </div>
+
     <?php if (isset($_SESSION['erabiltzailea'])) {
-        echo htmlspecialchars($_SESSION['erabiltzailea']);
-    } ?>
-    <a href="saioaItxi.php">Saioa amaitu</a>
-    <a class="right" href="#"><i class="fa fa-user-circle-o" id="ikonoa" aria-hidden="true"></i></a>
-    <div class="karritoa">
+        ?>
+        <a class="saioaItxi" href="saioaItxi.php"><i class="fa-solid fa-right-from-bracket" id="ikonoa"
+        aria-hidden="true"></i></a>
+        <div class="erabiltzaileIzena">
+            <?php echo htmlspecialchars($_SESSION['erabiltzailea']); ?>
+
+        </div>
+
+        
+    <?php } ?>
+    <a class="right" href="saioHasiera.php"><i class="fa fa-user-circle-o" id="ikonoa" aria-hidden="true"></i></a>
+
+    <div class="karritoa" id="karritoa">
         <i class="fa fa-shopping-cart" id="ikonoa" aria-hidden="true"></i>
     </div>
 
