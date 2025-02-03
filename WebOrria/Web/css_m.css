@@ -499,10 +499,11 @@ table, td, tr, th{
         margin: 2% auto;
         background-color: white;
         padding: 1%;
-        height: 83%;
+        height: 93%;
         box-sizing: border-box;
         text-align: center;
-        margin-bottom: 5%;
+        margin-bottom: 10%;
+        bottom:10%;
     }
     
     .formularioa .explikaziokaxa {
@@ -544,19 +545,20 @@ table, td, tr, th{
         min-height: 40%;
         font-size: 100%;
         text-decoration: none;
-        border:1px solid black;
+
         
         
     }
 
-    .add-to-cart {
+    .produktuak>.produktua>.add-to-cart {
         background-color: #28a745;
         color: white;
         width: 100%;
         height: 6%;
         border-collapse: collapse;
         cursor: pointer;
-        bottom:0%;
+        bottom: 0%;
+
     }
     @media (max-width:480px){
     .remove-from-cart{
@@ -564,7 +566,7 @@ table, td, tr, th{
         border:1px solid black;
         border-collapse: collapse;
         min-width: 10%;
-        width: 30%;
+        width: 50%;
         height: 15%;
     }
 }
@@ -573,8 +575,9 @@ table, td, tr, th{
     background-color: red;
     border:1px solid black;
     border-collapse: collapse;
-    width: 10%;
+    width: 20%;
     height: 15%;
+    
 }
 }
 
