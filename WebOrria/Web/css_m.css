@@ -1,3 +1,4 @@
+/* Web osorako estiloak */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,22 +10,24 @@ body {
     min-height: 100vh;
 }
 
-.grid-container > *{
+/* index-aren gorputz osoaren estiloak */
+.gorputza > * {
     text-align: center;
     font-weight: 500;
 }
 
-.grid-container {
+.gorputza {
     display: grid;
     grid-template-areas: 
         "header"
         "nav"
         "main"
         "footer";
-    grid-template-rows: auto auto 1fr auto;  
+    grid-template-rows: auto auto 1fr auto;
     min-height: 100vh;
 }
 
+/* headerraren estiloak */
 .header {
     display: grid;
     place-items: center;
@@ -32,268 +35,235 @@ body {
     padding: 10px;
 }
 
-    
-    .nav {
-        grid-area: nav;
-        background-color: lightgray;
-        padding: 10px;
-        min-height: 50px;
-    }
-    .content>.main {
-        grid-area: main;
-        background-color: lightblue;
-        padding: 20px;
-        min-height: 400px;
-        margin-top: 5%;
-    }
-    
+/* nabigazio barraren estiloak */
+.nav {
+    grid-area: nav;
+    background-color: lightgray;
+    padding: 10px;
+    min-height: 50px;
+}
 
-    .footer {
-        grid-area: footer;
-        background-color: gray;
-        text-align: center;
-        bottom: 0;
-    }
-    .grid-container {
-        display: grid;
-        grid-template-areas: 
-            "header"
-            "nav"
-            "main"
-            "footer";
-        grid-template-rows: auto auto 4fr auto; 
+/* edukiaren estiloa */
+.content > .main {
+    grid-area: main;
+    background-color: lightblue;
+    padding: 20px;
+    min-height: 400px;
+    margin-top: 5%;
+}
+
+/* footerraren estiloak */
+.footer {
+    grid-area: footer;
+    background-color: gray;
+    text-align: center;
+    bottom: 0;
+}
+
+/* kontenido guzitaren gorputzaren estiloak */
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+    grid-template-rows: auto auto 4fr auto;
+}
+
+/* mugikorrerako menuaren estiloak */
+@media (max-width:600px) { 
+    .logoa { 
+        width: 200px; 
+        height: 200px; 
+        box-shadow: none; 
+    } 
+    .karritoa { 
+        position: relative; 
+        font-size: 45px; 
+        float: right; 
+        margin-top: 25px; 
+        color: inherit; 
+        text-decoration: none; 
+    } 
+    .saioaHasi { 
+        position: relative; 
+        font-size: 45px; 
+        float: right; 
+        margin-top: 25px; 
+        color: inherit; 
+        text-decoration: none; } 
+        .saioaItxi { 
+            position: relative; 
+            font-size: 45px; float: right; 
+            margin-top: 25px; color: inherit; 
+            text-decoration: none; margin-left: 5px; 
+        } 
+        .erabiltzaileIzena { 
+            position: relative; 
+            font-size: 45px; float: 
+            right; margin-top: 25px; 
+            color: inherit; 
+            text-decoration: none; 
+            margin-left: 5px;
+        } 
         }
-    
-    
+/* ordenagailurako menuaren estiloak */
+@media (min-width:600px) { 
+    .logoa { 
+        width: 200px; 
+        height: 200px; 
+        box-shadow: none; 
+    } 
+    .karritoa { 
+        position: relative; 
+        float: right; 
+        font-size: 40px; 
+        margin-right:20px; 
+        margin-top: 30px; } 
+        
+        .right { 
+            position: relative; 
+            font-size: 45px; 
+            float: right; 
+            margin-top: 25px; 
+            color: inherit; 
+            text-decoration: none; 
+        } 
+        .saioaItxi { 
+            position: relative; 
+            font-size: 45px; 
+            float: right; 
+            margin-top: 25px; 
+            color: inherit; 
+            text-decoration: none; 
+            margin-left: 20px; 
+        } 
+        .erabiltzaileIzena { 
+            position: relative; 
+            font-size: 45px; 
+            float: right; 
+            margin-top: 25px; 
+            color: inherit; 
+            text-decoration: none; 
+            margin-left: 20px; 
+        } } 
+        .content { 
+            background-color: lightblue;
+        }
 
-
-/*Header-an dauden ikonoen eta enpresaren logoaren CSS-a*/
-
-@media (max-width:600px) {
-    .logoa {
-        width: 200px;
-        height: 200px;
-        box-shadow: none;
-    }
-    
-.karritoa {
-    position: relative;
-    font-size: 45px;
-    float: right;
-    margin-top: 25px;
-    color: inherit;
-    text-decoration: none;
-}
-.saioaHasi {
-        position: relative;
-        font-size: 45px;
-        float: right;
-        margin-top: 25px;
-        color: inherit;
-        text-decoration: none;
-}
-
-.saioaItxi {
-    position: relative;
-    font-size: 45px;
-    float: right;
-    margin-top: 25px;
-    color: inherit;
-    text-decoration: none;
-    margin-left: 5px;
-}
-
-.erabiltzaileIzena {
-    position: relative;
-    font-size: 45px;
-    float: right;
-    margin-top: 25px;
-    color: inherit;
-    text-decoration: none;
-    margin-left: 5px;
-}
-
-}
-
-@media (min-width:600px) {
-    .logoa {
-        width: 200px;
-        height: 200px;
-        box-shadow: none;
-    }
-    
-    .karritoa {
-        position: relative;
-        float: right;
-        font-size: 40px;
-        margin-right:20px;
-        margin-top: 30px;
-    }
-    .right {
-        position: relative;
-        font-size: 45px;
-        float: right;
-        margin-top: 25px;
-        color: inherit;
-        text-decoration: none;
-    }
-    .saioaItxi {
-        position: relative;
-        font-size: 45px;
-        float: right;
-        margin-top: 25px;
-        color: inherit;
-        text-decoration: none;
-        margin-left: 20px;
-    }
-    .erabiltzaileIzena {
-        position: relative;
-        font-size: 45px;
-        float: right;
-        margin-top: 25px;
-        color: inherit;
-        text-decoration: none;
-        margin-left: 20px;
-    }
-    }
-
+/* Edukiaren estiloak */
 .content {
     background-color: lightblue;
-
 }
 
-
-
-.eskaintza1{
-    border: 1px solid black;
-    width: 30%;
-    box-sizing: border-box;
-    background-color: white;   
-    border-radius: 8px;
-    padding: 16px;
-    margin: 16px;
-    transition: background-color 0.3s ease;     
-}
-
-.eskaintza1 img{
-    width: 70%;
-    height: 80%;
-}
-
-.eskaintza2{
+/* Eskaintzen estiloak */
+.eskaintza1, .eskaintza2 {
     border: 1px solid black;
     width: 30%;
     box-sizing: border-box;
     background-color: white;
+    border-radius: 8px;
     padding: 16px;
     margin: 16px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;  
+    transition: background-color 0.3s ease;
 }
 
-.eskaintza2 img{
+.eskaintza1 img, .eskaintza2 img {
     width: 70%;
     height: 80%;
 }
 
-.eskaintza1:hover {
-    background-color: #8d8989; 
-    border-color: #666;
-}
-.eskaintza2:hover {
-    background-color: #8d8989; 
+.eskaintza1:hover, .eskaintza2:hover {
+    background-color: #8d8989;
     border-color: #666;
 }
 
+/* Aparteko eskaintzaren estiloak */
 .aparteko {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
-    align-items: stretch; /*div guztiak altura berdina edukitzeko*/
-    gap: 16px;      
+    justify-content: center;
+    align-items: stretch; /*div guztiak altuera berdina edukitzeko*/
+    gap: 16px;
     text-align: center;
 }
 
-
-
-
-/*Ezkerreko 3 barren menuaren CSS-a hau klikatuta menu bat agertu dezan bere CSS-arekin*/
-
+/* Menuaren estiloak */
 .menu-container {
     position: relative;
-    float:left;
+    float: left;
 }
 
-@media (max-width:600px){
-.menu-icon {
-    font-size: 170%;
-    cursor: pointer;
-    margin: 20px;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    transition: background 0.3s;
+@media (max-width: 600px) {
+    .menu-icon {
+        font-size: 170%;
+        cursor: pointer;
+        margin: 20px;
+        padding: 10px;
+        background-color: #007BFF;
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        transition: background 0.3s;
+    }
+
+    .menu-icon:hover {
+        background-color: #0056b3;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: white;
+        padding-right: 60px;
+        margin-left: 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        overflow: hidden;
+        text-align: center;
+        align-items: center;
+        min-width: 100%;
+        min-height: 50%;
+        font-size: 200%;
+        text-decoration: none;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu ul li {
+        list-style: none;
+        padding: 12%;
+        border-bottom: 1px solid #ddd;
+        cursor: pointer;
+        text-align: center;
+        font-weight: bold;
+        color: #007BFF;
+        transition: background 0.3s, color 0.3s;
+        text-decoration: none;
+    }
+
+    .menu ul li:hover {
+        background-color: #007BFF;
+        color: white;
+    }
+
+    .menu ul li:last-child {
+        border-bottom: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: blue;
+    }
 }
 
-.menu-icon:hover {
-    background-color: #0056b3;
-}
-
-
-.menu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    padding-right: 60px;
-    margin-left: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    overflow: hidden;
-    text-align: center;
-    align-items: center;
-    min-width: 100%;
-    min-height: 50%;
-    font-size: 200%;
-    text-decoration: none;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu ul li {
-    list-style: none;
-    padding: 12%;
-    border-bottom: 1px solid #ddd;
-    cursor: pointer;
-    text-align: center;
-    font-weight: bold;
-    color: #007BFF;
-    transition: background 0.3s, color 0.3s;
-    text-decoration: none;
-}
-
-.menu ul li:hover {
-    background-color: #007BFF;
-    color: white;
-}
-
-.menu ul li:last-child {
-    border-bottom: none;
-}
-
-a {
-    text-decoration: none;
-    color: blue;
-}
-}
-
-@media (min-width:600px){
+@media (min-width: 600px) {
     .menu-icon {
         font-size: 250%;
         cursor: pointer;
@@ -306,12 +276,11 @@ a {
         align-items: center;
         transition: background 0.3s;
     }
-    
+
     .menu-icon:hover {
         background-color: #0056b3;
     }
-    
-    
+
     .menu {
         display: none;
         position: absolute;
@@ -326,13 +295,13 @@ a {
         font-size: 200%;
         text-decoration: none;
     }
-    
+
     .menu ul {
         list-style: none;
         padding: 0;
         margin: 0;
     }
-    
+
     .menu ul li {
         list-style: none;
         padding: 20px;
@@ -344,30 +313,27 @@ a {
         transition: background 0.3s, color 0.3s;
         text-decoration: none;
     }
-    
+
     .menu ul li:hover {
         background-color: #007BFF;
         color: white;
     }
-    
+
     .menu ul li:last-child {
         border-bottom: none;
     }
-    
+
     a {
         text-decoration: none;
         color: blue;
     }
-    }
-    
-
-/*Produktuen katalogorako estiloak*/
-
+}
+/* Produktuen katalogorako estiloak */
 .produktuak {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
-    align-items: stretch; /*div guztiak altura berdina edukitzeko*/
+    align-items: stretch; /* div guztiak altura berdina edukitzeko */
     gap: 16px;      
     text-align: center;   
 }
@@ -383,11 +349,11 @@ a {
     transition: background-color 0.3s ease;   
     overflow: hidden; 
 }
+
 .produktua:hover {
     background-color: #8d8989; 
     border-color: #666; 
 }
-
 @media (max-width: 768px) {
     .produktua {
         width: 30%;
@@ -405,34 +371,34 @@ a {
         width: 50%;
         height: 50%;
     }
-    
-    .eskaintza1{
-        width: 100%;
-        margin: 20px;
-        overflow: hidden;
-        text-align: center;
-    }
-    .eskaintza2{
+
+    .eskaintza1 {
         width: 100%;
         margin: 20px;
         overflow: hidden;
         text-align: center;
     }
 
+    .eskaintza2 {
+        width: 100%;
+        margin: 20px;
+        overflow: hidden;
+        text-align: center;
+    }
 }
 
 @media (max-width: 1100px) {
-    
-    .eskaintza1 img{
+    .eskaintza1 img {
         width: 90%;
         height: 60%;
     }
-    .eskaintza2 img{
+
+    .eskaintza2 img {
         width: 80%;
         height: 50%;
     }
-
 }
+
 .produktua img {
     width: 100%;
     height: auto;
@@ -441,11 +407,14 @@ a {
 .produktuIzena {
     text-align: center;
 }
+
 .produktuPrezioa {
     text-align: center;
     margin-bottom: 40px;
 }
-.eskainitakoZerbitzuak{
+
+/* Eskainitako zerbitzuen estiloak */
+.eskainitakoZerbitzuak {
     display: grid;
     grid-template-areas:
         'header'
@@ -459,80 +428,78 @@ a {
     margin-left: 15%;
 }
 
-
-table, td, tr, th{
+/* Zerbitzuen taulen estiloak */
+table, td, tr, th {
     row-gap: 0px;
     border: 1px solid black;
     text-align: center;
     margin-top: 5%;
 }
 
-.paketearenJarraipenaImg{
-    width: 25%;
-    height: 25%;
-}
-.garraioZerbitzuaImg{
+.paketearenJarraipenaImg {
     width: 25%;
     height: 25%;
 }
 
-.garraioZerbitzua{
-    background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5)
+.garraioZerbitzuaImg {
+    width: 25%;
+    height: 25%;
 }
-.bezeroarenArreta{
-    background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5)
+
+.garraioZerbitzua {
+    background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5);
 }
-.paketearenJarraipena{
+
+.bezeroarenArreta {
+    background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5);
+}
+
+.paketearenJarraipena {
     background: linear-gradient(to bottom left, #e0e8fd, #b3c5f5);
     margin-bottom: 5%;
 }
 
-/*mobilean formularioa ondo ikusteko*/
-@media (max-width:600px) {
-    
-.formularioa {
-    border: 1px black solid;
-    min-width: 50%;
-    width: 60%;
-    margin: 2% auto;
-    background-color: white;
-    padding: 1%;
-    height: 100%;
-    box-sizing: border-box;
-    text-align: center;
+/* Mugikorrean formularioa ondo ikusteko */
+@media (max-width: 600px) {
+    .formularioa {
+        border: 1px black solid;
+        min-width: 50%;
+        width: 60%;
+        margin: 2% auto;
+        background-color: white;
+        padding: 1%;
+        height: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .formularioa .explikaziokaxa {
+        width: 90%;
+        height: 20%;
+    }
+
+    .formularioa > form > .kontaktatubotoiak {
+        display: grid;
+        text-align: center;
+        grid-template-columns: 40% 40%;
+        grid-gap: 5%;
+        margin-left: 15%;
+    }
+
+    .formularioa > form > .kontaktatubotoiak > .bidalibotoia {
+        background-color: lightgreen;
+        margin: 2%;
+        height: 120%;
+    }
+
+    .formularioa > form > .kontaktatubotoiak > .ezabatubotoia {
+        background-color: rgb(255, 87, 87);
+        margin: 2%;
+        height: 120%;
+    }
 }
 
-.formularioa .explikaziokaxa {
-    width: 90%;
-    height: 20%;
-}
-
-.formularioa>form>.kontaktatubotoiak {
-    display: grid;
-    text-align: center;
-    grid-template-columns: 40% 40%;
-    grid-gap: 5%;
-    margin-left: 15%;
-}
-
-
-
-.formularioa>form>.kontaktatubotoiak>.bidalibotoia {
-    background-color: lightgreen;
-    margin: 2%;
-    height: 120%;
-}
-
-.formularioa>form>.kontaktatubotoiak>.ezabatubotoia {
-    background-color: rgb(255, 87, 87);
-    margin: 2%;
-    height: 120%;
-}
-}
-
-@media (min-width:600px) {
-    
-
+@media (min-width: 600px) {
     .formularioa {
         border: 1px black solid;
         width: 40%;
@@ -544,91 +511,88 @@ table, td, tr, th{
         text-align: center;
         margin-bottom: 5%;
     }
-    
+
     .formularioa .explikaziokaxa {
         width: 90%;
         height: 20%;
     }
-    
-    .formularioa>form>.kontaktatubotoiak {
+
+    .formularioa > form > .kontaktatubotoiak {
         display: grid;
         margin-left: 15%;
         grid-template-columns: 40% 40%;
         grid-gap: 5%;
     }
-    
-    
-    
-    .formularioa>form>.kontaktatubotoiak>.bidalibotoia {
+
+    .formularioa > form > .kontaktatubotoiak > .bidalibotoia {
         background-color: lightgreen;
         margin: 2%;
         height: 120%;
     }
-    
-    .formularioa>form>.kontaktatubotoiak>.ezabatubotoia {
+
+    .formularioa > form > .kontaktatubotoiak > .ezabatubotoia {
         background-color: rgb(255, 87, 87);
         margin: 2%;
         height: 120%;
     }
-    }
+}
 
-    .cart {
-        display: none;
-        position: absolute;
-        background-color: lightgreen;
-        right:0%;
-        overflow: hidden;
-        text-align: center;
-        align-items: center;
-        width: 30%;
-        min-height: 40%;
-        font-size: 100%;
-        text-decoration: none;
-        border:1px solid black;
-        
-        
-    }
+/* Produktuen karritoaren estiloak */
+.cart {
+    display: none;
+    position: absolute;
+    background-color: lightgreen;
+    right: 0%;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    width: 30%;
+    min-height: 40%;
+    font-size: 100%;
+    text-decoration: none;
+    border: 1px solid black;
+}
 
-    .argazkia{
-        width: 100%;
-        height: 415px;
-        object-fit: cover;
-        text-align: center;
-        
-    }
 
-    .add-to-cart {
-        background-color: #28a745;
-        color: white;
-        width: 100%;
-        height: 20%;
-        border-collapse: collapse;
-        cursor: pointer;
-        top: 50%;
+.argazkia {
+    width: 100%;
+    height: 415px;
+    object-fit: cover;
+}
 
-        bottom:0%;
-    }
-    @media (max-width:480px){
-    .remove-from-cart{
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    width: 100%;
+    height: 20%;
+    border-collapse: collapse;
+    cursor: pointer;
+    top: 50%;
+    bottom: 0%;
+}
+
+@media (max-width: 480px) {
+    .remove-from-cart {
         background-color: red;
-        border:1px solid black;
+        border: 1px solid black;
         border-collapse: collapse;
         min-width: 10%;
         width: 30%;
         height: 15%;
     }
 }
-    @media (min-width:480px){
-        .remove-from-cart{
-    background-color: red;
-    border:1px solid black;
-    border-collapse: collapse;
-    width: 10%;
-    height: 15%;
-}
+
+@media (min-width: 480px) {
+    .remove-from-cart {
+        background-color: red;
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 10%;
+        height: 15%;
+    }
 }
 
-/* erregistratzeko atalaren cssa */
+/* Erregistratzeko formularioaren estiloak */
 .ERh1 {
     color: #0277bd;
     text-align: center;
