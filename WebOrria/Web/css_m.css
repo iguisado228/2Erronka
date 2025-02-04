@@ -335,7 +335,7 @@ body {
     justify-content: center; 
     align-items: stretch; /* div guztiak altura berdina edukitzeko */
     gap: 16px;      
-    text-align: center; 
+    text-align: center;   
 }
 
 .produktua {
@@ -552,6 +552,7 @@ table, td, tr, th {
     text-decoration: none;
     border: 1px solid black;
 }
+
 
 .argazkia {
     width: 100%;
