@@ -58,7 +58,7 @@
     <?php } ?>
     <a class="right" href="saioHasiera.php"><i class="fa fa-user-circle-o" id="ikonoa" aria-hidden="true"></i></a>
 
-    <div class="karritoa" id="karritoa">
+    <div class="karritoa">
         <i class="fa fa-shopping-cart" id="ikonoa" aria-hidden="true"></i>
     </div>
 
