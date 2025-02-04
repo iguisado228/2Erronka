@@ -19,9 +19,9 @@
     </nav>
     <div class="content">
     <div class="botoia">
-                <div class="cart">
+                <div class="karritoa2">
                     <h2>Karrito</h2>
-                    <div id="cart-items">
+                    <div id="karrito-elementuak">
                         <p>Karritoa hutsik dago.</p>
                     </div>
                 </div>
