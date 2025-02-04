@@ -72,7 +72,7 @@ body {
 }
 
 /* mugikorrerako menuaren estiloak */
-@media (max-width:600px) { 
+@media (max-width:480px) { 
     .logoa { 
         width: 200px; 
         height: 200px; 
@@ -80,12 +80,20 @@ body {
     } 
     .karritoa { 
         position: relative; 
+        float: right; 
+        font-size: 40px; 
+        margin-right:20px; 
+        margin-top: 30px; } 
+        
+    
+    .right{
+        position: relative; 
         font-size: 45px; 
         float: right; 
         margin-top: 25px; 
         color: inherit; 
         text-decoration: none; 
-    } 
+    }
     .saioaHasi { 
         position: relative; 
         font-size: 45px; 
@@ -117,7 +125,7 @@ body {
         } 
         }
 /* ordenagailurako menuaren estiloak */
-@media (min-width:600px) { 
+@media (min-width:480px) { 
     .logoa { 
         width: 200px; 
         height: 200px; 
@@ -159,6 +167,7 @@ body {
         .content { 
             background-color: lightblue;
         }
+        
 
 /* Edukiaren estiloak */
 .content {
@@ -546,6 +555,7 @@ table, td, tr, th {
 }
 
 /* Produktuen karritoaren estiloak */
+@media (min-width:768px){
 .karritoa2 {
     display: none;
     position: absolute;
@@ -560,7 +570,41 @@ table, td, tr, th {
     text-decoration: none;
     border: 1px solid black;
 }
+}
+@media (min-width:480px){
 
+    .karritoa2{
+    display: none;
+    background-color: lightgreen;
+    right: 0%;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    min-height: 20%;
+    font-size: 100%;
+    text-decoration: none;
+    border: 1px solid black;
+    }
+}
+
+@media (max-width:480px){
+
+    .karritoa2{
+        display: none;
+        background-color: lightgreen;
+        right: 0%;
+        overflow: hidden;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        min-height: 10%;
+        font-size: 100%;
+        text-decoration: none;
+        border: 1px solid black;
+        }
+    }
+}
 .argazkia {
     width: 100%;
     height: 200px;
