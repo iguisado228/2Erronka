@@ -23,9 +23,9 @@
         <article class="main">
             <div class="content">
                 <div class="botoia">
-                    <div class="cart">
+                    <div class="karritoa2">
                         <h2>Karrito</h2>
-                        <div id="cart-items">
+                        <div id="karrito-elementuak">
                             <p>Karritoa hutsik dago.</p>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                         echo "<img src='../irudiak/produktuak/" . $row["irudia"] . "' >";
                         echo "</div>";
                         echo "<div class='gehituBotoia'>";
-                        echo "<button class='add-to-cart'>Gehitu karritora</button>";
+                        echo "<button class='gehitu-karritora'>Gehitu karritora</button>";
                         echo "</div>";
                         echo "</div>";
                     }
