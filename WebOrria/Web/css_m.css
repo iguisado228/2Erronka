@@ -606,8 +606,8 @@ table, td, tr, th {
         width: 50%;
         height: 15%;
     }
-
 }
+
 @media (min-width: 480px) {
     .kendu-karritotik{
         background-color: red;
@@ -897,4 +897,12 @@ div .active {
         margin: 10px;
         margin-left: 100px;
     }
+}
+
+
+/* eskaeraren estiloak */ç
+
+.eskaera {
+    height: 100%;
+    width: 100%;
 }

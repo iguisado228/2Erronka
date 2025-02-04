@@ -49,9 +49,8 @@
         ?>
         <a class="saioaItxi" href="saioaItxi.php"><i class="fa-solid fa-right-from-bracket" id="ikonoa"
         aria-hidden="true"></i></a>
-        <div class="erabiltzaileIzena">
-            <?php echo htmlspecialchars($_SESSION['erabiltzailea']); ?>
-
+        <div>
+            <a class="erabiltzaileIzena" href="erabiltzailePanela.php"><?php echo htmlspecialchars($_SESSION['erabiltzailea']); ?></a>
         </div>
 
         

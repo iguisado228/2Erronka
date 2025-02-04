@@ -39,7 +39,7 @@
                     die("Konexioa egiterako orduan errore bat egon da: " . $conn->connect_error);
                 }
 
-                $sql = "SELECT idProduktua, izena, prezioa, irudia FROM produktua"; // Incluye el ID
+                $sql = "SELECT idProduktua, izena, prezioa, irudia FROM produktua";
                 $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {
