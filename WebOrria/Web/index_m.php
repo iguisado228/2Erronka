@@ -8,7 +8,7 @@
     <title>Hasiera</title>
 </head>
 
-<body class="grid-container">
+<body class="gorputza">
     <header class="header">
         <?php require_once "header_m.php" ?>
     </header>
@@ -41,16 +41,11 @@
                     <p> 267.99€ !!!!</p>
                     <img src="../irudiak/produktuak/produktu18.png" alt="">
                 </div>
-        </div>
+            </div>
     </article>
     <footer class="footer">
         <?php require_once "footer_m.php" ?>
     </footer>
-
-    <?php
-    require_once("karritoa.php")
-        ?>
+    <?php require_once "karritoa.php" ?>
 </body>
-
-
 </html>
