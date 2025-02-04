@@ -57,6 +57,9 @@ $(document).ready(function () {
             ${cartItems}
             <p><strong>Guztira: ${cart.reduce((total, item) => total + item.price, 0).toFixed(2)}€</strong></p>
         `;
+        <?php
+        
+        ?>
     }
 
     $(".karritoa").click(function () {
