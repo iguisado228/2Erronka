@@ -546,7 +546,7 @@ table, td, tr, th {
 }
 
 /* Produktuen karritoaren estiloak */
-.cart {
+.karritoa2 {
     display: none;
     position: absolute;
     background-color: lightgreen;
@@ -586,7 +586,7 @@ table, td, tr, th {
     }
 }
 
-.add-to-cart {
+.gehitu-karritora {
     background-color: #28a745;
     color: white;
     width: 100%;
@@ -597,23 +597,24 @@ table, td, tr, th {
     bottom: 0%;
 }
 
-
-    .remove-from-cart {
+@media (max-width: 480px) {
+    .kendu-karritotik {
         background-color: red;
         border: 1px solid black;
         border-collapse: collapse;
-        min-width: 10%;
-        width: 30%;
+        min-width: 40%;
+        width: 50%;
         height: 15%;
     }
 
-
+}
 @media (min-width: 480px) {
-    .remove-from-cart {
+    .kendu-karritotik{
         background-color: red;
         border: 1px solid black;
         border-collapse: collapse;
-        width: 10%;
+        min-width: 30%;
+        width: 35%;
         height: 15%;
     }
 }
