@@ -39,7 +39,7 @@
                     die("Konexioa egiterako orduan errore bat egon da: " . $conn->connect_error);
                 }
 
-                $sql = "SELECT idProduktua, izena, prezioa, irudia FROM produktua"; // Incluye el ID
+                $sql = "SELECT idProduktua, izena, prezioa, irudia FROM produktua";
                 $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {
@@ -68,11 +68,17 @@
             <?php require_once "footer_m.php" ?>
         </footer>
     </div>
+<<<<<<< HEAD
 
 
 <?php
 require_once("karritoa.php")
 ?>
+=======
+    <?php
+    require_once("karritoa.php")
+        ?>
+>>>>>>> 846eda0c635f523ca6a63aeaca08ceaadcd2ecdd
 </body>
 
 </html>
