@@ -14,6 +14,8 @@ $(document).ready(function () {
                 id: produktuaElementua.dataset.idproduktua,
                 izena: produktuaElementua.dataset.name,
                 prezioa: parseFloat(produktuaElementua.dataset.price)
+                <?php
+                ?>
             };
 
             gehituKarritora(produktua);
@@ -55,6 +57,7 @@ $(document).ready(function () {
             <h3>Produktuak karritoan:</h3>
             ${karritoElementuak}
             <p><strong>Guztira: ${karritoa.reduce((guztira, item) => guztira + item.prezioa, 0).toFixed(2)}€</strong></p>
+
         `;
     }
 
