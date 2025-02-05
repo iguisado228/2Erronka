@@ -68,17 +68,12 @@
             <?php require_once "footer_m.php" ?>
         </footer>
     </div>
-<<<<<<< HEAD
 
 
 <?php
 require_once("karritoa.php")
 ?>
-=======
-    <?php
-    require_once("karritoa.php")
-        ?>
->>>>>>> 846eda0c635f523ca6a63aeaca08ceaadcd2ecdd
+
 </body>
 
 </html>
