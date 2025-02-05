@@ -29,7 +29,7 @@
             border-collapse: collapse;
         }
 
-        .content .zestoa th, 
+        .content .zestoa th,
         .content .zestoa td {
             padding: 10px;
             border-bottom: 1px solid #ddd;
@@ -115,7 +115,7 @@
                             $kopurua = 1;
                             $produktuenGehiketa = $row["prezioa"] * $kopurua;
                             $ordainketaGuztira += $produktuenGehiketa;
-                            
+
                             echo "<tr>";
                             echo "<td>" . $row["izena"] . "</td>";
                             echo "<td><img src='../irudiak/produktuak/" . $row["irudia"] . "' ></td>";

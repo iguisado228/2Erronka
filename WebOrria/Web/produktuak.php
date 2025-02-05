@@ -68,9 +68,9 @@
             <?php require_once "footer_m.php" ?>
         </footer>
     </div>
-<?php
-require_once("karritoa.php")
-?>
+    <?php
+    require_once("karritoa.php")
+        ?>
 </body>
 
 </html>
