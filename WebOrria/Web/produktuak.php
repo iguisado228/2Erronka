@@ -52,7 +52,7 @@
                         echo "<img src='../irudiak/produktuak/" . $row["irudia"] . "' >";
                         echo "</div>";
                         echo "<div class='gehituBotoia'>";
-                        echo "<button class='gehitu-karritora'>Gehitu karritora</button>";
+                        echo "<button class='gehitu-karritora'>Gehitu zestora</button>";
                         echo "</div>";
                         echo "</div>";
                     }
@@ -68,9 +68,12 @@
             <?php require_once "footer_m.php" ?>
         </footer>
     </div>
+
+
 <?php
 require_once("karritoa.php")
 ?>
+
 </body>
 
 </html>

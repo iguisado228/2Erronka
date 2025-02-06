@@ -37,7 +37,7 @@ if (isset($_POST["erregistratu"])) {
     <link rel="stylesheet" href="css_m.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
-       
+
     </style>
 </head>
 
@@ -49,58 +49,60 @@ if (isset($_POST["erregistratu"])) {
         <?php require_once "menu.php" ?>
     </nav>
     <div class="content">
-    <div class="botoia">
-                <div class="cart">
-                    <h2>Karrito</h2>
-                    <div id="cart-items">
-                        <p>Karritoa hutsik dago.</p>
-                    </div>
+        <div class="botoia">
+            <div class="karritoa2">
+                <h2>Karrito</h2>
+                <div id="karrito-elementuak">
+                    <p>Karritoa hutsik dago.</p>
                 </div>
-        <article class="main">
+            </div>
+            <article class="main">
 
-            <form method="post" action="erabiltzaileaErregistratu.php" class="ERformularioa">
-                <h1 class="ERh1">Sartu zure datuak</h1>
-                <label for="nan" class="ERetiketa">Nan</label>
-                <input type="text" name="nan" id="nan" required><br><br>
+                <form method="post" action="erabiltzaileaErregistratu.php" class="ERformularioa">
+                    <h1 class="ERh1">Sartu zure datuak</h1>
+                    <label for="nan" class="ERetiketa">Nan</label>
+                    <input type="text" name="nan" id="nan" required><br><br>
 
-                <label for="izena" class="ERetiketa">Izena</label>
-                <input type="text" name="izena" id="izena" required><br><br>
+                    <label for="izena" class="ERetiketa">Izena</label>
+                    <input type="text" name="izena" id="izena" required><br><br>
 
-                <label for="abizena" class="ERetiketa">Abizena/Abizenak</label>
-                <input type="text" name="abizena" id="abizena"><br><br>
+                    <label for="abizena" class="ERetiketa">Abizena/Abizenak</label>
+                    <input type="text" name="abizena" id="abizena"><br><br>
 
-                <label for="telefonoa" class="ERetiketa">Tlf.Zenbakia</label>
-                <input type="text" name="telefonoa" id="telefonoa" placeholder="XXX-XXX-XXX" pattern="[0-9]{9}"> <br>
-                <br>
+                    <label for="telefonoa" class="ERetiketa">Tlf.Zenbakia</label>
+                    <input type="text" name="telefonoa" id="telefonoa" placeholder="XXX-XXX-XXX" pattern="[0-9]{9}">
+                    <br>
+                    <br>
 
-                <label for="helbidea" class="ERetiketa">Helbidea</label>
-                <input type="text" name="helbidea" id="helbidea"><br><br>
+                    <label for="helbidea" class="ERetiketa">Helbidea</label>
+                    <input type="text" name="helbidea" id="helbidea"><br><br>
 
-                <label for="erabiltzaileIzena" class="ERetiketa">Erabiltzaile izena</label>
-                <input type="text" name="erabiltzaileIzena" id="erabiltzaileIzena" required><br><br>
+                    <label for="erabiltzaileIzena" class="ERetiketa">Erabiltzaile izena</label>
+                    <input type="text" name="erabiltzaileIzena" id="erabiltzaileIzena" required><br><br>
 
-                <label for="pasahitza" class="ERetiketa">Pasahitza</label>
-                <input type="password" name="pasahitza" id="pasahitza" required><br><br>
+                    <label for="pasahitza" class="ERetiketa">Pasahitza</label>
+                    <input type="password" name="pasahitza" id="pasahitza" required><br><br>
 
-                <label for="helbideElektronikoa" class="ERetiketa">Helbide elektronikoa</label>
-                <input type="email" name="helbideElektronikoa" id="helbideElektronikoa" placeholder="exmpl@gmail.com"
-                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required> <br><br>
+                    <label for="helbideElektronikoa" class="ERetiketa">Helbide elektronikoa</label>
+                    <input type="email" name="helbideElektronikoa" id="helbideElektronikoa"
+                        placeholder="exmpl@gmail.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                    <br><br>
 
 
-                <button type="submit" class="ERbotoia" name="erregistratu">Erregistratu</button>
-            </form>
-        </article>
+                    <button type="submit" class="ERbotoia" name="erregistratu">Erregistratu</button>
+                </form>
+            </article>
 
-    </div>
-    <footer class="footer">
-        <?php require_once "footer_m.php" ?>
-    </footer>
-    <?php
-    $conn->close();
-    ?>
-    <?php
-    require_once("karritoa.php");
-    ?>
+        </div>
+        <footer class="footer">
+            <?php require_once "footer_m.php" ?>
+        </footer>
+        <?php
+        $conn->close();
+        ?>
+        <?php
+        require_once("karritoa.php");
+        ?>
 </body>
 
 </html>
