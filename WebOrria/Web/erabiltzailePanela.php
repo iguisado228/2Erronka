@@ -97,17 +97,22 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php
-                    require_once("db.php");
+                <?php
+require_once("db.php");
 
-                    $conn = konexioaSortu();
+$conn = konexioaSortu(); 
 
-                    if ($conn->connect_error) {
-                        die("Konexioa egiterako orduan errore bat egon da: " . $conn->connect_error);
-                    }
+if ($conn->connect_error) {
+    die("Konexioa egiterako orduan errore bat egon da: " . $conn->connect_error);
+}
 
-                    $sql = "SELECT idProduktua, izena, prezioa, irudia FROM produktua";
-                    $result = $conn->query($sql);
+$sql = "SELECT idProduktua, izena, prezioa, irudia FROM produktua";
+$result = $conn->query($sql);
+
+if ($result === false) {
+    die("Errore SQL bat gertatu da: " . $conn->error);
+}
+
 
                     $ordainketaGuztira = 0;
                     if ($result->num_rows > 0) {
