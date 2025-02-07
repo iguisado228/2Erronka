@@ -34,7 +34,7 @@
                     },
                     success: function (response) {
                         alert(response);
-                        //window.location.href = "erabiltzailePanela.php";
+                        window.location.href = "erabiltzailePanela.php";
                     },
                     error: function () {
                         alert("Errorea eskaera bidaltzean!");
