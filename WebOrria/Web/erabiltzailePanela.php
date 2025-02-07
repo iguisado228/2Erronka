@@ -106,14 +106,30 @@ if ($conn->connect_error) {
     die("Konexioa egiterako orduan errore bat egon da: " . $conn->connect_error);
 }
 
-$sql = "SELECT idProduktua, izena, prezioa, irudia FROM produktua";
+if (!isset($_SESSION['erabiltzaileaId'])) {
+    die("Erabiltzaileak ez du saioa hasi.");
+}
+
+$idErabiltzailea = intval($_SESSION['erabiltzaileaId']); // ida zenbaki batean bihurtzen da
+
+$sql = "SELECT 
+            e.idEskaera, 
+            e.bezeroa_idBezeroa, 
+            e.produktua_idProduktua, 
+            e.eskaeraData, 
+            e.egoera, 
+            p.izena, 
+            p.prezioa, 
+            p.irudia 
+        FROM eskaera e 
+        JOIN produktua p ON e.produktua_idProduktua = p.idProduktua 
+        WHERE e.bezeroa_idBezeroa = $idErabiltzailea";
+
 $result = $conn->query($sql);
 
 if ($result === false) {
-    die("Errore SQL bat gertatu da: " . $conn->error);
+    die("Errore bat gertatu da: " . $conn->error);
 }
-
-
                     $ordainketaGuztira = 0;
                     if ($result->num_rows > 0) {
                         while ($row = $result->fetch_assoc()) {
