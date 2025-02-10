@@ -76,11 +76,11 @@
 
 <body class="grid-container">
     <header class="header">
-        <?php require_once "/parts/header.php"; ?>
+        <?php require_once "parts/header.php"; ?>
     </header>
 
     <nav class="nav">
-        <?php require_once "menu.php"; ?>
+        <?php require_once "parts/menu.php"; ?>
     </nav>
 
     <div class="content">
@@ -139,7 +139,7 @@ if ($result === false) {
 
                             echo "<tr>";
                             echo "<td>" . $row["izena"] . "</td>";
-                            echo "<td><img src='../irudiak/produktuak/" . $row["irudia"] . "' ></td>";
+                            echo "<td><img src='../../public/irudiak/produktuak/" . $row["irudia"] . "' ></td>";
                             echo "<td>" . $row["prezioa"] . "€</td>";
                             echo "<td>" . $kopurua . "</td>";
                             echo "<td>" . number_format($produktuenGehiketa, 2) . "€</td>";

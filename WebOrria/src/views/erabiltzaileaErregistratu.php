@@ -34,7 +34,7 @@ if (isset($_POST["erregistratu"])) {
 <head>
     <title>Erregistratu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/css/css.css">
+    <link rel="stylesheet" href="../../public/css/css.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
 
@@ -43,10 +43,10 @@ if (isset($_POST["erregistratu"])) {
 
 <body class="grid-container">
     <header class="header">
-        <?php require_once "header.php" ?>
+        <?php require_once "parts/header.php" ?>
     </header>
     <nav class="nav">
-        <?php require_once "menu.php" ?>
+        <?php require_once "parts/menu.php" ?>
     </nav>
     <div class="content">
         <div class="botoia">
@@ -95,7 +95,7 @@ if (isset($_POST["erregistratu"])) {
 
         </div>
         <footer class="footer">
-            <?php require_once "footer.php" ?>
+            <?php require_once "parts/footer.php" ?>
         </footer>
         <?php
         $conn->close();
