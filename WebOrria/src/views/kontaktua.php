@@ -20,68 +20,69 @@
 
     </nav>
     <div class="content">
-    <div class="botoia">
-                <div class="karritoa2">
-                    <h2>Karrito</h2>
-                    <div id="karrito-elementuak">
-                        <p>Karritoa hutsik dago.</p>
-                    </div>
+        <div class="botoia">
+            <div class="karritoa2">
+                <h2><?= trans("erosketaZestoa") ?></h2>
+                <div id="karrito-elementuak">
+                    <?= trans("zestoaHutsik") ?>
                 </div>
-    </div>
+            </div>
+        </div>
 
         <div class="formularioa">
             <form action="" method="get">
-                <h1>Kontaktatu</h1> <br>
+                <h1><?= trans("kontaktatu") ?></h1> <br>
 
-                <label for="izena">Izena*</label>
+                <label for="izena"><?= trans("izena") ?></label>
                 <input type="text" name="izena" id="izena" required> <br> <br>
-                <label for="abizena">Abizena</label>
+                <label for="abizena"><?= trans("abizena") ?></label>
                 <input type="text" name="abizena" id="abizena"> <br> <br>
-                <label for="telefonoa">Telefonoa*</label>
+                <label for="telefonoa"><?= trans("telefonoa") ?></label>
                 <input type="text" name="telefonoa" id="telefonoa" placeholder="+34 6xxxxxxx" required> <br> <br>
-                <label for="emaila">Emaila*</label>
+                <label for="emaila"><?= trans("emaila") ?></label>
                 <input type="email" name="emaila" id="emaila" pattern=".+@.+\..+" required> <br> <br>
 
-                <label for="informazioajaso"><strong> Nola jaso nahi duzu informazioa?*</strong></label> <br> <br>
+                <label for="informazioajaso"><strong><?= trans("informazioaJaso") ?></strong></label> <br> <br>
 
                 <input type="radio" name="informazioajaso" id="telefonozjaso" checked value="telefonoz">
-                <label for="informazioajaso">Telefono bidez</label> <br>
+                <label for="informazioajaso"><?= trans("telefonoBi") ?></label> <br>
 
 
 
                 <input type="radio" name="informazioajaso" id="emailezjaso" value="emailez">
-                <label for="informazioajaso">Email bidez</label> <br> <br>
+                <label for="informazioajaso"><?= trans("emailBi") ?></label> <br> <br>
 
-                <label for="errorea">Akats mota*</label>
+                <label for="errorea"><?= trans("akatsMota") ?></label>
                 <select class="arazoa">
-                    <option disabled selected>Arazoa</option>
-                    <option value="bueltatu">Gailua bueltatu nahi dut</option>
-                    <option value="konponketa">Arazo bat konpondu nahi du</option>
-                    <option value="bestelakoa">Beste arazo bat</option>
+                    <option disabled selected><?= trans("arazoa") ?></option>
+                    <option value="bueltatu"><?= trans("gailuaBueltatu") ?></option>
+                    <option value="konponketa"><?= trans("arazoaKonpondu") ?></option>
+                    <option value="bestelakoa"><?= trans("besteArazoBat") ?></option>
                 </select> <br> <br>
 
-                <label for="explikazioa">Esplikatu zure arazoa</label> <br>
+                <label for="explikazioa"><?= trans("azalduArazoa") ?></label> <br>
                 <textarea type="textarea" name="explikazioa" id="explikazioa" class="explikaziokaxa"></textarea>
                 <br>
                 <br>
                 <div class="kontaktatubotoiak">
-                    <input type="submit" name="bidali" value="Bidali" class="bidalibotoia">
-                    <input type="reset" value="Garbitu" class="ezabatubotoia">
+                    <input type="submit" name="bidali" value="<?= trans("bidali") ?>" class="bidalibotoia">
+                    <input type="reset" value="<?= trans("garbitu") ?>" class="ezabatubotoia">
                 </div>
             </form>
         </div>
-        
+
 
         </table>
 
     </div>
     <?php
     require_once("karritoa.php")
-    ?>
+        ?>
 
     <footer class="footer">
         <?php require_once "parts/footer.php" ?>
     </footer>
 
 </body>
+
 </html>

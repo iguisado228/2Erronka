@@ -22,14 +22,14 @@
         </nav>
         <article class="main">
             <div class="content">
-                <div class="botoia">
-                    <div class="karritoa2">
-                        <h2>Karrito</h2>
-                        <div id="karrito-elementuak">
-                            <p>Karritoa hutsik dago.</p>
-                        </div>
+            <div class="botoia">
+                <div class="karritoa2">
+                    <h2><?= trans("erosketaZestoa") ?></h2>
+                    <div id="karrito-elementuak">
+                        <?= trans("zestoaHutsik") ?>
                     </div>
                 </div>
+            </div>
                 <?php
                 require_once("db.php");
 
@@ -47,7 +47,7 @@
                     while ($row = $result->fetch_assoc()) {
                         echo "<div class='produktua' data-idProduktua='" . $row["idProduktua"] . "' data-name='" . $row["izena"] . "' data-price='" . $row["prezioa"] . "'>";
                         echo "<h2 class='produktuIzena'>" . $row["izena"] . "</h2>";
-                        echo "<p class='produktuPrezioa'>Prezioa: " . $row["prezioa"] . "€</p>";
+                        echo "<p class='produktuPrezioa'>". trans("prezioa") . $row["prezioa"] . "€</p>";
                         echo "<div class='argazkia'>";
                         echo "<img src='../../public/irudiak/produktuak/" . $row["irudia"] . "' >";
                         echo "</div>";

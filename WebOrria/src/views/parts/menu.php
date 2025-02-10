@@ -4,34 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <link rel="stylesheet" href="../../../public/css/css.css">
-    <style>
-        #login-container {
-            display: none;
-            position: fixed;
-            top: 20%;
-            left: 35%;
-            width: 100%;
-            height: 100%;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
 </head>
 
 <body>
 
-    <?php session_start(); ?>
+    <?php
+    require_once(APP_DIR . "/src/translation/translations.php"); //APP_DIR erabilita itzulpenen dokumentua atzitu dugu.
+
+    ?>
 
     <nav class="nabigazioBarra">
         <ul class="nabigazioEstekak">
-            <li><a href="index.php"><b>Hasiera</b></a></li>
-            <li><a href="produktuak.php"><b>Produktuak</b></a></li>
-            <li><a href="kontaktua.php"><b>Kontaktua</b></a></li>
-            <li><a href="zerbitzuak.php"><b>Zerbitzuak</b></a></li>
+            <li><a href="index.php"><b><?= trans("hasieraNav") ?></b></a></li>
+            <li><a href="produktuak.php"><b><?= trans("produktuakNav") ?></b></a></li>
+            <li><a href="kontaktua.php"><b><?= trans("kontaktuaNav") ?></b></a></li>
+            <li><a href="zerbitzuak.php"><b><?= trans("zerbitzuakNav") ?></b></a></li>
         </ul>
         <button class="menuBotoia"><strong>☰</strong></button>
     </nav>

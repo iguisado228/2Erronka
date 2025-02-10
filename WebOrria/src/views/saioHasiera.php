@@ -1,3 +1,11 @@
+<?php
+define('APP_DIR', value: $_SERVER['DOCUMENT_ROOT'] . '/2ERRONKA/WebOrria'); //Aplikazioaren karpeta edozein lekutatik atzitzeko.
+define('HREF_VIEWS_DIR', '/2ERRONKA/WebOrria/src/views'); //Aplikazioaren views karpeta edozein lekutatik deitzeko
+
+require_once(APP_DIR . "/src/translation/translations.php"); //APP_DIR erabilita itzulpenen dokumentua atzitu dugu.
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -9,19 +17,19 @@
 <body>
     <div class="lehioa-contenido">
         <a href="#" class="itxi">&times;</a>
-        <h1>Saio Hasiera</h1>
+        <h1><?= trans("saioHasiera") ?></h1>
         <form method="POST">
             <div class="erabiltzailea">
                 <input class="sesioHasiera" type="text" id="erabiltzailea" name="erabiltzailea" required />
-                <label for="erabiltzailea">Erabiltzailea</label>
+                <label for="erabiltzailea"><?= trans("erabiltzailea") ?></label>
             </div>
             <div class="pasahitza">
                 <input class="sesioHasiera" type="password" id="pasahitza" name="pasahitza" required />
-                <label for="pasahitza">Pasahitza</label>
+                <label for="pasahitza"><?= trans("pasahitza") ?></label>
             </div>
             <input type="submit" value="Saioa Hasi" id="bidali" />
             <div class="erregistratu">
-                <a href="erabiltzaileaErregistratu.php">Erregistratu</a> egin nahi dut.
+                <a href="erabiltzaileaErregistratu.php"><?= trans("erregistratu") ?></a> <?= trans("eginNahi") ?>.
             </div>
         </form>
     </div>

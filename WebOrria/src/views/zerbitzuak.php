@@ -19,44 +19,35 @@
 
     </nav>
     <div class="content">
-    <div class="botoia">
-                <div class="karritoa2">
-                    <h2>Karrito</h2>
-                    <div id="karrito-elementuak">
-                        <p>Karritoa hutsik dago.</p>
-                    </div>
+        <div class="botoia">
+            <div class="karritoa2">
+                <h2><?= trans("erosketaZestoa") ?></h2>
+                <div id="karrito-elementuak">
+                    <?= trans("zestoaHutsik") ?>
                 </div>
             </div>
+        </div>
         <div class="eskainitakoZerbitzuak">
             <table class="garraioZerbitzua">
                 <tr>
-                    <th>Garraio zerbitzua</th>
+                    <th><?= trans("garraioZerbitzua") ?></th>
                 </tr>
                 <tr>
-                    <td>Garraio zerbitzua eskaintzen dugu pertsonen edo salgaien mugikortasuna errazteko modu eraginkor,
-                        azkar eta seguruan. Bezeroen beharrak asetzeko, hainbat garraio aukera eskaintzen ditugu, hala
-                        nola, puntualtasuna, erosotasuna eta fidagarritasuna bermatuz. Helburua da erabiltzaileen
-                        eguneroko bizitza erraztea eta logistika beharrei erantzutea, lehiakortasuna eta gogobetetasuna
-                        hobetuz. <br><img class="garraioZerbitzuaImg"
+                    <td><?= trans("garraioZerbitzuaText") ?><br><img class="garraioZerbitzuaImg"
                             src="../../public/irudiak/garraioZerbitzua.png">
                     </td>
                 </tr>
             </table>
-            
+
 
 
             <table class="bezeroarenArreta">
 
                 <tr>
-                    <th>Bezeroaren arreta</th>
+                    <th><?= trans("bezeroArreta") ?></th>
                 </tr>
                 <tr>
-                    <td>Bezeroaren arreta eskaintzen dugu bezeroei laguntza, informazioa eta konponbideak emateko, haien
-                        beharrak eta arazoak modu azkar eta eraginkorrean kudeatuz. Helburua da bezeroaren
-                        gogobetetasuna
-                        bermatzea, konfiantza sortzea eta esperientzia positiboa eskaintzea, gure zerbitzuaren kalitatea
-                        eta
-                        fidagarritasuna indartuz.<br><img class="bezeroarenArretaImg"
+                    <td><?= trans("bezeroArretaText") ?><br><img class="bezeroarenArretaImg"
                             src="../../public/irudiak/bezeroarenArreta.png">
                     </td>
                 </tr>
@@ -65,17 +56,12 @@
             <table class="paketearenJarraipena">
 
                 <tr>
-                    <th>Paketearen jarraipena</th>
+                    <th><?= trans("paketearenJarraipena") ?></th>
                 </tr>
 
                 <tr>
-                    <td>Paketearen jarraipen zerbitzua eskaintzen dugu bezeroek haien bidalketen egoera eta kokapena
-                        uneoro
-                        ezagutu ahal izateko. Helburua da gardentasuna, segurtasuna eta lasaitasuna bermatzea,
-                        bidalketen
-                        kontrol osoa eta entrega puntualaren konfiantza eskainiz.<br><img
-                            class="paketearenJarraipenaImg"
-                            src="../../public/irudiak/paketeJarraipena.png">
+                    <td><?= trans("paketearenJarraipenaText") ?><br><img
+                            class="paketearenJarraipenaImg" src="../../public/irudiak/paketeJarraipena.png">
                     </td>
                 </tr>
             </table>
@@ -86,7 +72,7 @@
     </div>
     <?php
     require_once("karritoa.php")
-    ?>
+        ?>
 
     <footer class="footer">
         <?php require_once "parts/footer.php" ?>

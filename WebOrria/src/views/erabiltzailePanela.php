@@ -85,15 +85,15 @@
 
     <div class="content">
         <div class="zestoaGuztia">
-            <h2>Erosketaren baieztapena</h2>
+            <h2><?= trans("erosketarenBaieztapena") ?></h2>
             <table class="zestoa">
                 <thead>
                     <tr>
-                        <th>Produktua</th>
-                        <th>Irudia</th>
-                        <th>Prezioa</th>
-                        <th>Kopurua</th>
-                        <th>Guztira</th>
+                        <th><?= trans("produktuaEP") ?></th>
+                        <th><?= trans("irudiaEP") ?></th>
+                        <th><?= trans("prezioaEP") ?></th>
+                        <th><?= trans("kopuruaEP") ?></th>
+                        <th><?= trans("guztiraEP") ?></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -146,7 +146,7 @@ if ($result === false) {
                             echo "</tr>";
                         }
                     } else {
-                        echo "<tr><td colspan='5'>Ez dira produktuak geratzen</td></tr>";
+                        echo "<tr><td colspan='5'>". trans("zestoaHutsa"). "</td></tr>";
                     }
 
                     $conn->close();
@@ -154,12 +154,12 @@ if ($result === false) {
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="4"><strong>Prezioa guztira:</strong></td>
+                        <td colspan="4"><strong><?= trans("prezioaGuztira") ?></strong></td>
                         <td><strong><?php echo number_format($ordainketaGuztira, 2); ?>€</strong></td>
                     </tr>
                 </tfoot>
             </table>
-            <button class="erosiBotoia">Erosketa egin</button>
+            <button class="erosiBotoia"><?= trans("erosketaEgin") ?></button>
         </div>
     </div>
 
