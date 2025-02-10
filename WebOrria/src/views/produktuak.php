@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css_m.css">
+    <link rel="stylesheet" href="../../public/css/css.css">
     <title>Produktuak</title>
     <style>
 
@@ -15,10 +15,10 @@
 <body>
     <div class="grid-container">
         <header class="header">
-            <?php require_once "header_m.php" ?>
+            <?php require_once "parts/header.php" ?>
         </header>
         <nav class="nav">
-            <?php require_once "menu.php" ?>
+            <?php require_once "parts/menu.php" ?>
         </nav>
         <article class="main">
             <div class="content">
@@ -49,7 +49,7 @@
                         echo "<h2 class='produktuIzena'>" . $row["izena"] . "</h2>";
                         echo "<p class='produktuPrezioa'>Prezioa: " . $row["prezioa"] . "€</p>";
                         echo "<div class='argazkia'>";
-                        echo "<img src='../irudiak/produktuak/" . $row["irudia"] . "' >";
+                        echo "<img src='../../public/irudiak/produktuak/" . $row["irudia"] . "' >";
                         echo "</div>";
                         echo "<div class='gehituBotoia'>";
                         echo "<button class='gehitu-karritora'>Gehitu zestora</button>";
@@ -65,7 +65,7 @@
             </div>
         </article>
         <footer class="footer">
-            <?php require_once "footer_m.php" ?>
+            <?php require_once "parts/footer.php" ?>
         </footer>
     </div>
 

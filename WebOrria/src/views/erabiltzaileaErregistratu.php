@@ -19,7 +19,7 @@ if (isset($_POST["erregistratu"])) {
         $sql = "INSERT INTO bezeroa (NAN, izena, abizena, telefonoa, helbidea, erabiltzaileIzena, pasahitza, helbideElektronikoa) VALUES ('$nan', '$izena', '$abizena', '$telefonoa', '$helbidea', '$erabiltzaileIzena', '$pasahitza', '$helbideElektronikoa')";
 
         if ($conn->query($sql) === TRUE) {
-            header("Location: index_m.php");
+            header("Location: index.php");
             die();
         } else {
             echo "Error: " . $conn->error;
@@ -34,7 +34,7 @@ if (isset($_POST["erregistratu"])) {
 <head>
     <title>Erregistratu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css_m.css">
+    <link rel="stylesheet" href="../public/css/css.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
 
@@ -43,7 +43,7 @@ if (isset($_POST["erregistratu"])) {
 
 <body class="grid-container">
     <header class="header">
-        <?php require_once "header_m.php" ?>
+        <?php require_once "header.php" ?>
     </header>
     <nav class="nav">
         <?php require_once "menu.php" ?>
@@ -95,7 +95,7 @@ if (isset($_POST["erregistratu"])) {
 
         </div>
         <footer class="footer">
-            <?php require_once "footer_m.php" ?>
+            <?php require_once "footer.php" ?>
         </footer>
         <?php
         $conn->close();

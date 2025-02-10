@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css_m.css">
+    <link rel="stylesheet" href="../../public/css/css.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Zerbitzuak</title>
@@ -10,12 +10,12 @@
 
 <body class="grid-container">
     <header class="header">
-        <?php require_once "header_m.php" ?>
+        <?php require_once "parts/header.php" ?>
     </header>
 
     <nav class="nav">
 
-        <?php require_once "menu.php" ?>
+        <?php require_once "parts/menu.php" ?>
 
     </nav>
     <div class="content">
@@ -38,7 +38,7 @@
                         nola, puntualtasuna, erosotasuna eta fidagarritasuna bermatuz. Helburua da erabiltzaileen
                         eguneroko bizitza erraztea eta logistika beharrei erantzutea, lehiakortasuna eta gogobetetasuna
                         hobetuz. <br><img class="garraioZerbitzuaImg"
-                            src="../irudiak/garraioZerbitzua.png">
+                            src="../../public/irudiak/garraioZerbitzua.png">
                     </td>
                 </tr>
             </table>
@@ -57,7 +57,7 @@
                         bermatzea, konfiantza sortzea eta esperientzia positiboa eskaintzea, gure zerbitzuaren kalitatea
                         eta
                         fidagarritasuna indartuz.<br><img class="bezeroarenArretaImg"
-                            src="../irudiak/bezeroarenArreta.png">
+                            src="../../public/irudiak/bezeroarenArreta.png">
                     </td>
                 </tr>
             </table>
@@ -75,7 +75,7 @@
                         bidalketen
                         kontrol osoa eta entrega puntualaren konfiantza eskainiz.<br><img
                             class="paketearenJarraipenaImg"
-                            src="https://img.freepik.com/vector-premium/smartphone-aplicacion-seguimiento-rastreo-paquete-abierto_107173-9206.jpg">
+                            src="../../public/irudiak/paketeJarraipena.png">
                     </td>
                 </tr>
             </table>
@@ -89,7 +89,7 @@
     ?>
 
     <footer class="footer">
-        <?php require_once "footer_m.php" ?>
+        <?php require_once "parts/footer.php" ?>
     </footer>
 
 

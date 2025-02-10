@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <link rel="stylesheet" href="css_m.css">
+    <link rel="stylesheet" href="../../public/css/css.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -53,7 +53,7 @@
                 .done(function (bueltatutakoInfo) {
                     var datuak = JSON.parse(bueltatutakoInfo);
                     if (datuak.kopurua > 0) {
-                        window.location.href = 'index_m.php';
+                        window.location.href = 'index.php';
                     } else {
                         alert("Erabiltzailea edo pasahitza ez da zuzena.");
                     }

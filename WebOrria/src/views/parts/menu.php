@@ -7,7 +7,7 @@
     <title>Mi Página</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <link rel="stylesheet" href="css_m.css">
+    <link rel="stylesheet" href="../../../public/css/css.css">
     <style>
         #login-container {
             display: none;
@@ -28,7 +28,7 @@
 
     <nav class="nabigazioBarra">
         <ul class="nabigazioEstekak">
-            <li><a href="index_m.php"><b>Hasiera</b></a></li>
+            <li><a href="index.php"><b>Hasiera</b></a></li>
             <li><a href="produktuak.php"><b>Produktuak</b></a></li>
             <li><a href="kontaktua.php"><b>Kontaktua</b></a></li>
             <li><a href="zerbitzuak.php"><b>Zerbitzuak</b></a></li>
