@@ -35,6 +35,15 @@ body {
   padding: 10px;
 }
 
+/* hizkuntza aldatzeko ikonoaren estiloak */
+.hizkuntzaIkonoa {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 60px;
+  height: auto;
+}
+
 /* nabigazio barraren estiloak */
 .nav {
   grid-area: nav;
