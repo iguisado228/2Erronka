@@ -1,5 +1,6 @@
 <?php
 return [
+
     /* index */
     "erosketaZestoa" => "Shopping Basket",
     "zestoaHutsik" => "The basket is empty.",
@@ -85,8 +86,8 @@ return [
     "produktuaEP" => "Product",
     "irudiaEP" => "Image",
     "prezioaEP" => "Price",
-    "kopuruaEP" => "Quantity",
     "guztiraEP" => "Total",
+    "egoeraEP" => "Package Status",
     "prezioaGuztira" => "Total price: ",
     "erosketaEgin" => "Make Purchase",
     "zestoaHutsa" => "The basket is empty",

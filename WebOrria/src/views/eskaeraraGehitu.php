@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $idBezeroa = $_SESSION["erabiltzaileaId"];
     $helbidea = $_SESSION["helbideaErabiltzailea"] ?? "Helbidea ez dago eskuragarri"; /* Helbidea ez dago eskuragarri jartzen du momentu guztian, ez du bezeroaren helbidea ongi gordetzen loginEgiaztatu dokumentuan */
     $eskaeraData = date("Y-m-d H:i:s");
-    $egoera = "berrikusten";
+    $egoera = "Berrikusten";
 
     if (!isset($_POST["produktuak"])) {
         echo "Errorea: Ez dago produkturik karritoan.";

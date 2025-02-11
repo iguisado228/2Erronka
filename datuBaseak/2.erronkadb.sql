@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.38, for Win64 (x86_64)
 --
--- Host: localhost    Database: 2.erronka
+-- Host: localhost    Database: 2erronka
 -- ------------------------------------------------------
 -- Server version	8.0.39
 
@@ -28,12 +28,12 @@ CREATE TABLE `bezeroa` (
   `izena` varchar(20) NOT NULL,
   `abizena` varchar(45) NOT NULL,
   `telefonoa` varchar(9) NOT NULL,
+  `helbideElektronikoa` varchar(45) NOT NULL,
   `helbidea` longtext NOT NULL,
   `erabiltzaileIzena` varchar(45) NOT NULL,
   `pasahitza` varchar(20) NOT NULL,
-  `helbideElektronikoa` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`idBezeroa`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,7 +42,7 @@ CREATE TABLE `bezeroa` (
 
 LOCK TABLES `bezeroa` WRITE;
 /*!40000 ALTER TABLE `bezeroa` DISABLE KEYS */;
-INSERT INTO `bezeroa` VALUES (1,'12345678A','Jon','Etxebarria','600123456','Calle Mayor 1, Bilbao','jonetxe','P@ssw0rd1','jetxebarria@gmail.com'),(2,'23456789B','Amaia','Goikoetxea','600234567','Calle Los Álamos 4, Donostia','amaiagoi','Amaia!123','agoikoetxea@gmail.com'),(3,'34567890C','Mikel','Zubizarreta','600345678','Calle Arenal 7, Vitoria','mikelzub','Zubiz@rr3ta','mzubizarreta@gmail.com'),(4,'45678901D','Nerea','Aranburu','600456789','Calle Txindoki 12, Eibar','nereaara','Nerea2023','naranburu@gmail.com'),(5,'56789012E','Aitor','Lasa','600567890','Calle Gipuzkoa 15, Hernani','aitorlasa','P@ssLasa','alasa@gmail.com'),(6,'67890123F','Irati','Mendizabal','600678901','Calle Urumea 18, Tolosa','iratimendi','M3nd1z@b@l','imendizabal@gmail.com'),(7,'78901234G','Unai','Iraola','600789012','Calle Atxuri 21, Bilbao','unaiira','Iraol@2023','uiraola@gmail.com'),(8,'89012345H','Ane','Zuaznabar','600890123','Calle Antiguo 24, Donostia','anezuaz','Zua$123','azuaznabar@gmail.com'),(9,'90123456I','Oier','Imaz','600901234','Calle Aralar 27, Beasain','oierimaz','P@ss123','oimaz@gmail.com'),(10,'01234567J','Eneko','Lopez','600012345','Calle Errekalde 30, Zumaia','enekolopez','L0pez!@#','elopez@gmail.com'),(11,'11234567K','Maite','Urbieta','600112345','Calle Eroski 33, Galdakao','maiteurb','Urb!2023','murbieta@gmail.com'),(12,'21234567L','Ander','Altuna','600212345','Calle Santa Clara 36, Hondarribia','anderalt','Altuna123','aaltuna@gmail.com'),(13,'31234567M','Edurne','Garmendia','600312345','Calle Zabalburu 39, Bilbao','edurnegar','P@sswEdurne','egarmendia@gmail.com'),(14,'41234567N','Xabier','Egiguren','600412345','Calle Matia 42, Donostia','xabiegig','Egiguren99','xegiguren@gmail.com'),(15,'51234567O','Iker','Lertxundi','600512345','Calle Mendizorrotza 45, Vitoria','ikerler','L3rtxundi','ilertxundi@gmail.com'),(16,'61234567P','Leire','Bikandi','600612345','Calle Urdaibai 48, Gernika','leirebik','Bikandi2023','lbikandi@gmail.com'),(17,'71234567Q','Arantxa','Larrea','600712345','Calle Baserri 51, Oñati','arantxalar','Larrea$$','alarrea@gmail.com'),(18,'81234567R','Beñat','Eguren','600812345','Calle Atxondo 54, Durango','benategu','Eguren!@','beguren@gmail.com'),(19,'91234567S','Garazi','Zabala','600912345','Calle Urkizu 57, Tolosa','garazizab','Zabala123','gzabala@gmail.com'),(20,'01324567T','Xabi','Goiria','600013456','Calle Zurriola 60, Donostia','xabigoir','GoiriaP@ss','xgoiria@gmail.com'),(21,'22334567U','Aitor','Olabarri','600223456','Calle Getxo 63, Getxo','aitorolab','Olabarri!1','aolabarri@gmail.com'),(22,'32334567V','Jone','Errekondo','600323456','Calle Garbera 66, Donostia','jonerrek','Errek2023','jerrekondo@gmail.com'),(23,'42334567W','Maddi','Lekue','600423456','Calle Anboto 69, Arrasate','maddilek','Lekue$$$','mlekue@gmail.com'),(24,'52334567X','Iban','Azkue','600523456','Calle Tabira 72, Durango','ibanazk','Azkue456','iazkue@gmail.com'),(25,'62334567Y','Aiora','Etxaniz','600623456','Calle Egia 75, Donostia','aioraetx','Etx@123','aetxaniz@gmail.com'),(26,'72334567Z','Iñigo','Uribarri','600723456','Calle Loiola 78, Donostia','inigurib','Urib@2023','iuribarri@gmail.com'),(27,'82334567A','Naiara','Sagastibeltza','600823456','Calle Landako 81, Durango','naiarasag','Sagasti!@','nsagastibeltza@gmail.com'),(28,'92334567B','Gaizka','Jauregi','600923456','Calle Igeldo 84, Donostia','gaizkaja','Jauregi2023','gjauregi@gmail.com'),(29,'03334567C','Uxue','Elorza','600033456','Calle Txomin 87, Eibar','uxuelor','Elorza***','uelorza@gmail.com'),(30,'13334567D','Patxi','Bereziartua','600133456','Calle Amara 90, Donostia','patxiber','Berezi2023','pbereziartua@gmail.com');
+INSERT INTO `bezeroa` VALUES (1,'12345678A','Jon','Etxebarria','600123456','','Calle Mayor 1, Bilbao','jonetxe','P@ssw0rd1'),(2,'23456789B','Amaia','Goikoetxea','600234567','','Calle Los Álamos 4, Donostia','amaiagoi','Amaia!123'),(3,'34567890C','Mikel','Zubizarreta','600345678','','Calle Arenal 7, Vitoria','mikelzub','Zubiz@rr3ta'),(4,'45678901D','Nerea','Aranburu','600456789','','Calle Txindoki 12, Eibar','nereaara','Nerea2023'),(5,'56789012E','Aitor','Lasa','600567890','','Calle Gipuzkoa 15, Hernani','aitorlasa','P@ssLasa'),(6,'67890123F','Irati','Mendizabal','600678901','','Calle Urumea 18, Tolosa','iratimendi','M3nd1z@b@l'),(7,'78901234G','Unai','Iraola','600789012','','Calle Atxuri 21, Bilbao','unaiira','Iraol@2023'),(8,'89012345H','Ane','Zuaznabar','600890123','','Calle Antiguo 24, Donostia','anezuaz','Zua$123'),(9,'90123456I','Oier','Imaz','600901234','','Calle Aralar 27, Beasain','oierimaz','P@ss123'),(10,'01234567J','Eneko','Lopez','600012345','','Calle Errekalde 30, Zumaia','enekolopez','L0pez!@#'),(11,'11234567K','Maite','Urbieta','600112345','','Calle Eroski 33, Galdakao','maiteurb','Urb!2023'),(12,'21234567L','Ander','Altuna','600212345','','Calle Santa Clara 36, Hondarribia','anderalt','Altuna123'),(13,'31234567M','Edurne','Garmendia','600312345','','Calle Zabalburu 39, Bilbao','edurnegar','P@sswEdurne'),(14,'41234567N','Xabier','Egiguren','600412345','','Calle Matia 42, Donostia','xabiegig','Egiguren99'),(15,'51234567O','Iker','Lertxundi','600512345','','Calle Mendizorrotza 45, Vitoria','ikerler','L3rtxundi'),(16,'61234567P','Leire','Bikandi','600612345','','Calle Urdaibai 48, Gernika','leirebik','Bikandi2023'),(17,'71234567Q','Arantxa','Larrea','600712345','','Calle Baserri 51, Oñati','arantxalar','Larrea$$'),(18,'81234567R','Beñat','Eguren','600812345','','Calle Atxondo 54, Durango','benategu','Eguren!@'),(19,'91234567S','Garazi','Zabala','600912345','','Calle Urkizu 57, Tolosa','garazizab','Zabala123'),(20,'01324567T','Xabi','Goiria','600013456','','Calle Zurriola 60, Donostia','xabigoir','GoiriaP@ss'),(21,'22334567U','Aitor','Olabarri','600223456','','Calle Getxo 63, Getxo','aitorolab','Olabarri!1'),(22,'32334567V','Jone','Errekondo','600323456','','Calle Garbera 66, Donostia','jonerrek','Errek2023'),(23,'42334567W','Maddi','Lekue','600423456','','Calle Anboto 69, Arrasate','maddilek','Lekue$$$'),(24,'52334567X','Iban','Azkue','600523456','','Calle Tabira 72, Durango','ibanazk','Azkue456'),(25,'62334567Y','Aiora','Etxaniz','600623456','','Calle Egia 75, Donostia','aioraetx','Etx@123'),(26,'72334567Z','Iñigo','Uribarri','600723456','','Calle Loiola 78, Donostia','inigurib','Urib@2023'),(27,'82334567A','Naiara','Sagastibeltza','600823456','','Calle Landako 81, Durango','naiarasag','Sagasti!@'),(28,'92334567B','Gaizka','Jauregi','600923456','','Calle Igeldo 84, Donostia','gaizkaja','Jauregi2023'),(29,'03334567C','Uxue','Elorza','600033456','','Calle Txomin 87, Eibar','uxuelor','Elorza***'),(30,'13334567D','Patxi','Bereziartua','600133456','','Calle Amara 90, Donostia','patxiber','Berezi2023'),(31,'73276155H','Iraitz','Guisado','688735260','iraitzguisado@gmail.com','Plaza Zumea 1-2B','jey228','1234'),(32,'73276155H','Iraitz','Guisado','688735260','iraitzguisado@gmail.com','Plaza Zumea 1-2B','jey228','1234');
 /*!40000 ALTER TABLE `bezeroa` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -84,15 +84,19 @@ DROP TABLE IF EXISTS `eskaera`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `eskaera` (
-  `idEskaera` int NOT NULL AUTO_INCREMENT,
-  `helbidea` longtext NOT NULL,
+  `idEskaeraTaula` int NOT NULL AUTO_INCREMENT,
+  `idEskaera` int NOT NULL,
+  `bezeroa_idBezeroa` int NOT NULL,
+  `produktua_idProduktua` int NOT NULL,
+  `helbidea` varchar(45) NOT NULL,
   `eskaeraData` date NOT NULL,
   `egoera` varchar(45) NOT NULL,
-  `bezeroa_idBezeroa` int NOT NULL,
-  PRIMARY KEY (`idEskaera`,`bezeroa_idBezeroa`),
+  PRIMARY KEY (`idEskaeraTaula`,`idEskaera`,`bezeroa_idBezeroa`,`produktua_idProduktua`),
   KEY `fk_eskaera_bezeroa1_idx` (`bezeroa_idBezeroa`),
-  CONSTRAINT `fk_eskaera_bezeroa1` FOREIGN KEY (`bezeroa_idBezeroa`) REFERENCES `bezeroa` (`idBezeroa`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
+  KEY `fk_eskaera_produktua1_idx` (`produktua_idProduktua`),
+  CONSTRAINT `fk_eskaera_bezeroa1` FOREIGN KEY (`bezeroa_idBezeroa`) REFERENCES `bezeroa` (`idBezeroa`),
+  CONSTRAINT `fk_eskaera_produktua1` FOREIGN KEY (`produktua_idProduktua`) REFERENCES `produktua` (`idProduktua`)
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -101,62 +105,8 @@ CREATE TABLE `eskaera` (
 
 LOCK TABLES `eskaera` WRITE;
 /*!40000 ALTER TABLE `eskaera` DISABLE KEYS */;
+INSERT INTO `eskaera` VALUES (1,67,15,2,'Helbidea ez dago eskuragarri','2025-02-06','Ordaindua'),(2,67,15,2,'Helbidea ez dago eskuragarri','2025-02-06','Ordaindua'),(3,67,15,2,'Helbidea ez dago eskuragarri','2025-02-06','Ordaindua'),(4,67,15,2,'Helbidea ez dago eskuragarri','2025-02-06','Ordaindua'),(5,67,15,2,'Helbidea ez dago eskuragarri','2025-02-06','Ordaindua'),(6,67,15,2,'Helbidea ez dago eskuragarri','2025-02-06','Ordaindua'),(7,67,15,3,'Helbidea ez dago eskuragarri','2025-02-06','Ordaindua'),(8,67,15,3,'Helbidea ez dago eskuragarri','2025-02-06','Ordaindua'),(9,67,15,3,'Helbidea ez dago eskuragarri','2025-02-06','Ordaindua'),(10,67,15,3,'Helbidea ez dago eskuragarri','2025-02-06','Ordaindua'),(11,67,15,3,'Helbidea ez dago eskuragarri','2025-02-06','Ordaindua'),(12,67,15,3,'Helbidea ez dago eskuragarri','2025-02-06','Ordaindua'),(13,67,15,4,'Helbidea ez dago eskuragarri','2025-02-06','Ordaindua'),(14,67,15,4,'Helbidea ez dago eskuragarri','2025-02-06','Ordaindua'),(15,67,15,1,'Calle Mendizorrotza 45, Vitoria','2025-02-06','Ordaindua'),(16,67,15,1,'Calle Mendizorrotza 45, Vitoria','2025-02-06','Ordaindua'),(17,67,18,5,'Calle Atxondo 54, Durango','2025-02-07','Ordaindua'),(18,67,18,7,'Calle Atxondo 54, Durango','2025-02-07','Ordaindua'),(19,67,15,3,'Calle Mendizorrotza 45, Vitoria','2025-02-11','Ordaindua'),(20,67,15,3,'Calle Mendizorrotza 45, Vitoria','2025-02-11','Ordaindua'),(21,67,15,3,'Calle Mendizorrotza 45, Vitoria','2025-02-11','Ordaindua'),(22,67,32,3,'Plaza Zumea 1-2B','2025-02-11','Ordaindua'),(23,67,32,4,'Plaza Zumea 1-2B','2025-02-11','Ordaindua'),(24,67,32,4,'Plaza Zumea 1-2B','2025-02-11','Ordaindua'),(25,67,32,6,'Plaza Zumea 1-2B','2025-02-11','Ordaindua'),(26,67,32,6,'Plaza Zumea 1-2B','2025-02-11','Ordaindua'),(27,67,32,9,'Plaza Zumea 1-2B','2025-02-11','Ordaindua'),(28,67,32,8,'Plaza Zumea 1-2B','2025-02-11','Ordaindua'),(29,67,32,12,'Plaza Zumea 1-2B','2025-02-11','Ordaindua');
 /*!40000 ALTER TABLE `eskaera` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `eskaera_has_produktua`
---
-
-DROP TABLE IF EXISTS `eskaera_has_produktua`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `eskaera_has_produktua` (
-  `eskaera_idEskaera` int NOT NULL,
-  `eskaera_bezeroa_idBezeroa` int NOT NULL,
-  `produktua_idProduktua` int NOT NULL,
-  `produktuKopurua` int NOT NULL,
-  PRIMARY KEY (`eskaera_idEskaera`,`eskaera_bezeroa_idBezeroa`,`produktua_idProduktua`),
-  KEY `fk_eskaera_has_produktua_produktua1_idx` (`produktua_idProduktua`),
-  KEY `fk_eskaera_has_produktua_eskaera1_idx` (`eskaera_idEskaera`,`eskaera_bezeroa_idBezeroa`),
-  CONSTRAINT `fk_eskaera_has_produktua_eskaera1` FOREIGN KEY (`eskaera_idEskaera`, `eskaera_bezeroa_idBezeroa`) REFERENCES `eskaera` (`idEskaera`, `bezeroa_idBezeroa`),
-  CONSTRAINT `fk_eskaera_has_produktua_produktua1` FOREIGN KEY (`produktua_idProduktua`) REFERENCES `produktua` (`idProduktua`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `eskaera_has_produktua`
---
-
-LOCK TABLES `eskaera_has_produktua` WRITE;
-/*!40000 ALTER TABLE `eskaera_has_produktua` DISABLE KEYS */;
-/*!40000 ALTER TABLE `eskaera_has_produktua` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `eskaera_has_produktua_historikoa`
---
-
-DROP TABLE IF EXISTS `eskaera_has_produktua_historikoa`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `eskaera_has_produktua_historikoa` (
-  `eskaera_idEskaera` int DEFAULT NULL,
-  `eskaera_bezeroa_idBezeroa` int DEFAULT NULL,
-  `prduktua_idProduktua` int DEFAULT NULL,
-  `produktuKopurua` int DEFAULT NULL,
-  `aldaketa_data` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `operazio_mota` enum('UPDATE','DELETE') DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `eskaera_has_produktua_historikoa`
---
-
-LOCK TABLES `eskaera_has_produktua_historikoa` WRITE;
-/*!40000 ALTER TABLE `eskaera_has_produktua_historikoa` DISABLE KEYS */;
-/*!40000 ALTER TABLE `eskaera_has_produktua_historikoa` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -167,11 +117,13 @@ DROP TABLE IF EXISTS `eskaerahistorikoa`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `eskaerahistorikoa` (
+  `idEskaeraTaula` int DEFAULT NULL,
   `idEskaera` int DEFAULT NULL,
-  `helbidea` longtext,
+  `bezeroa_idBezeroa` int DEFAULT NULL,
+  `produktua_idProduktua` int DEFAULT NULL,
+  `helbidea` varchar(45) DEFAULT NULL,
   `eskaeraData` date DEFAULT NULL,
   `egoera` varchar(45) DEFAULT NULL,
-  `bezeroa_idBezeroa` int DEFAULT NULL,
   `aldaketa_data` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `operazio_mota` enum('UPDATE','DELETE') DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
@@ -227,10 +179,10 @@ CREATE TABLE `hornitzaileahistorikoa` (
   `idHornitzailea` int DEFAULT NULL,
   `NAN` varchar(9) DEFAULT NULL,
   `izena` varchar(20) DEFAULT NULL,
-  `abizena` varchar(45) DEFAULT NULL,
+  `abizean` varchar(45) DEFAULT NULL,
   `telefonoa` varchar(9) DEFAULT NULL,
   `helbidea` longtext,
-  `erabiltzaileaIzena` varchar(45) DEFAULT NULL,
+  `erabiltzaileIzena` varchar(45) DEFAULT NULL,
   `pasahitza` varchar(20) DEFAULT NULL,
   `aldaketa_data` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `operazio_mota` enum('UPDATE','DELETE') DEFAULT NULL
@@ -327,7 +279,7 @@ CREATE TABLE `produktua` (
   `deskribapena` longtext NOT NULL,
   `langilea_idLangilea` int NOT NULL,
   `hornitzailea_idHornitzailea` int NOT NULL,
-  `irudia` varchar(255) DEFAULT NULL,
+  `irudia` varchar(45) NOT NULL,
   PRIMARY KEY (`idProduktua`,`langilea_idLangilea`,`hornitzailea_idHornitzailea`),
   KEY `fk_produktua_langilea_idx` (`langilea_idLangilea`),
   KEY `fk_produktua_hornitzailea1_idx` (`hornitzailea_idHornitzailea`),
@@ -361,6 +313,7 @@ CREATE TABLE `produktuahistorikoa` (
   `deskribapena` longtext,
   `langilea_idLangilea` int DEFAULT NULL,
   `hornitzailea_idHornitzailea` int DEFAULT NULL,
+  `irudia` varchar(45) DEFAULT NULL,
   `aldaketa_data` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `operazio_mota` enum('UPDATE','DELETE') DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
@@ -384,4 +337,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-01-29 12:03:06
+-- Dump completed on 2025-02-11  9:32:19

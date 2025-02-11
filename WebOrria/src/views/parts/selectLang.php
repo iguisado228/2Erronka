@@ -1,26 +1,24 @@
-<form method="post">
-    <select name="selectedLang">
-        <option value="en" <?php
-        if (isset($_POST["selectedLang"]) && $_POST["selectedLang"] == "en") {
-            echo "selected";
-        } else {
-            if (isset($_SESSION["_LANGUAGE"]) && $_SESSION["_LANGUAGE"] == "en") {
-                echo "selected";
-            }
-        }
-        ?>>EN
-        </option>
-        <!-- PHPko logika honekin formularioan zein hizkuntza agertzen den aukeratuta erabakiko dugu -->
-        <option value="eus" <?php
-        //formulariotik aukeratutako hizkuntza euskara bada
-        if (isset($_POST["selectedLang"]) && $_POST["selectedLang"] == "eus") {
-            echo "selected";
-        }
-        //formulariotik ez bada hizkuntzarik aukeratu eta sesioan euskara badago
-        else if (!isset($_POST["selectedLang"]) && isset($_SESSION["_LANGUAGE"]) && $_SESSION["_LANGUAGE"] == "eus") {
-            echo "selected";
-        }
-        ?>> EUS</option>
-    </select>
-    <button>Aldatu</button>
-</form>
+<?php
+// Iniciar sesión
+session_start();
+
+// Establecer el idioma inicial si no está configurado
+if (!isset($_SESSION["_LANGUAGE"])) {
+    $_SESSION["_LANGUAGE"] = "eus"; // Por defecto, se establece Euskera
+}
+
+// Establecer el idioma actual y el opuesto
+$currentLang = $_SESSION["_LANGUAGE"];
+$oppositeLang = ($currentLang === 'eus') ? 'en' : 'eus'; // Si está en Euskera, cambiará a Inglés y viceversa
+?>
+
+<!-- Enlaces de idiomas con íconos -->
+<a href="?selectedLang=<?php echo $oppositeLang; ?>" class="language-icon">
+    <?php if ($currentLang === 'eus'): ?>
+        <!-- Si el idioma es Euskera, mostrar el ícono de Inglés -->
+        <img src="../../public/irudiak/uk.png" alt="English" title="Change to English">
+    <?php else: ?>
+        <!-- Si el idioma es Inglés, mostrar el ícono de Euskera -->
+        <img src="../../public/irudiak/ikurrina.png" alt="Euskara" title="Change to Euskara">
+    <?php endif; ?>
+</a>

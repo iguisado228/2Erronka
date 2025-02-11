@@ -1,56 +1,40 @@
 <?php
-
-// EKINTZAK
-
-session_start(); //Sesioa hasten dugu bertan gordetzeko zein hizkuntzatan ari garen
-
-if (!isset($_SESSION["_LANGUAGE"])) { //Sesioan hizkuntza ez bada gorde
-  setSessionLanguageToDefault(); //Defektuzko hizkuntza jartzen dugu
-}
-
-changeSessionLanguage(); //Beti funtzio hontan sartzen gara
-
-?>
-
-<!-- HTML-A -->
-
-
-
-<?php
-
-/** FUNTZIOAK */
+// language.php
+// Función para establecer el idioma por defecto
 function setSessionLanguageToDefault()
 {
-  $_SESSION["_LANGUAGE"] = "eus"; //Defektuz "eus" hizkuntza jartzen dugu (hemen "en" jarri ezkero, language karpetan en.php izeneko fitxategi bat egon beharko litzateke)
+  $_SESSION["_LANGUAGE"] = "eus"; // Establecemos 'eus' como idioma por defecto
 }
 
+// Función para cambiar el idioma según el parámetro GET
 function changeSessionLanguage()
 {
-  /** post batean informazioa datorrenean bakarrik aldatuko da */
-  if (isset($_POST["selectedLang"])) {
-    $_SESSION["_LANGUAGE"] = $_POST["selectedLang"]; //post-ean datorren hizkuntza jarriko du sesioko aldagaiean
+  if (isset($_GET["selectedLang"])) {
+    $_SESSION["_LANGUAGE"] = $_GET["selectedLang"]; // Actualizamos el idioma en la sesión
   }
-
 }
+
+// Establecer el idioma si aún no se ha guardado en la sesión
+if (!isset($_SESSION["_LANGUAGE"])) {
+  setSessionLanguageToDefault(); // Establecer 'eus' si no se ha guardado
+}
+
+// Cambiar el idioma si es necesario
+changeSessionLanguage(); 
+
+// Función para las traducciones
 function trans($indexPhrase)
 {
-  //Itzulpen array-a sortzen da
   static $tranlationsArray = array();
 
-  //eus.php edo es.php existitzen den begiratzen da
+  // Verificar si el archivo de traducciones existe
   if (file_exists(APP_DIR . '/translations/' . $_SESSION["_LANGUAGE"] . '.php')) {
     $url = APP_DIR . '/translations/';
-    //Existitzen bada fitxategi horretan dagoen array-a $translationArray barruan sartzen da
-    $tranlationsArray = include( $url . $_SESSION["_LANGUAGE"] . '.php');
+    // Cargar las traducciones del archivo correspondiente
+    $tranlationsArray = include($url . $_SESSION["_LANGUAGE"] . '.php');
+  }
 
-  }
-  //Array-eko indizearen balioa itzultzen du.
-  
-  if(!array_key_exists($indexPhrase, $tranlationsArray)){
-    return $indexPhrase ;
-  }else{
-    return $tranlationsArray[$indexPhrase];
-  }
+  // Devolver la traducción si existe, si no, devolver la frase original
+  return isset($tranlationsArray[$indexPhrase]) ? $tranlationsArray[$indexPhrase] : $indexPhrase;
 }
-
 ?>

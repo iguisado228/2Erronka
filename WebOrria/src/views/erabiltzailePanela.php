@@ -92,32 +92,33 @@
                         <th><?= trans("produktuaEP") ?></th>
                         <th><?= trans("irudiaEP") ?></th>
                         <th><?= trans("prezioaEP") ?></th>
-                        <th><?= trans("kopuruaEP") ?></th>
-                        <th><?= trans("guztiraEP") ?></th>
+                        <th><?= trans(indexPhrase: "egoeraEP") ?></th>
+                        <th><?= trans(indexPhrase: "guztiraEP") ?></th>
                     </tr>
                 </thead>
                 <tbody>
-                <?php
-require_once("db.php");
+                    <?php
 
-$conn = konexioaSortu(); 
+                    require_once("db.php");
 
-if ($conn->connect_error) {
-    die("Konexioa egiterako orduan errore bat egon da: " . $conn->connect_error);
-}
+                    $conn = konexioaSortu();
 
-if (!isset($_SESSION['erabiltzaileaId'])) {
-    die("Erabiltzaileak ez du saioa hasi.");
-}
+                    if ($conn->connect_error) {
+                        die("Konexioa egiterako orduan errore bat egon da: " . $conn->connect_error);
+                    }
 
-$idErabiltzailea = intval($_SESSION['erabiltzaileaId']); // ida zenbaki batean bihurtzen da
+                    if (!isset($_SESSION['erabiltzaileaId'])) {
+                        die("Erabiltzaileak ez du saioa hasi.");
+                    }
 
-$sql = "SELECT 
+                    $idErabiltzailea = intval($_SESSION['erabiltzaileaId']); // ida zenbaki batean bihurtzen da
+                    
+                    $sql = "SELECT 
             e.idEskaera, 
             e.bezeroa_idBezeroa, 
             e.produktua_idProduktua, 
             e.eskaeraData, 
-            e.egoera, 
+            e.egoera,
             p.izena, 
             p.prezioa, 
             p.irudia 
@@ -125,11 +126,11 @@ $sql = "SELECT
         JOIN produktua p ON e.produktua_idProduktua = p.idProduktua 
         WHERE e.bezeroa_idBezeroa = $idErabiltzailea";
 
-$result = $conn->query($sql);
+                    $result = $conn->query($sql);
 
-if ($result === false) {
-    die("Errore bat gertatu da: " . $conn->error);
-}
+                    if ($result === false) {
+                        die("Errore bat gertatu da: " . $conn->error);
+                    }
                     $ordainketaGuztira = 0;
                     if ($result->num_rows > 0) {
                         while ($row = $result->fetch_assoc()) {
@@ -141,12 +142,12 @@ if ($result === false) {
                             echo "<td>" . $row["izena"] . "</td>";
                             echo "<td><img src='../../public/irudiak/produktuak/" . $row["irudia"] . "' ></td>";
                             echo "<td>" . $row["prezioa"] . "€</td>";
-                            echo "<td>" . $kopurua . "</td>";
+                            echo "<td>" . $row["egoera"] . "</td>";
                             echo "<td>" . number_format($produktuenGehiketa, 2) . "€</td>";
                             echo "</tr>";
                         }
                     } else {
-                        echo "<tr><td colspan='5'>". trans("zestoaHutsa"). "</td></tr>";
+                        echo "<tr><td colspan='5'>" . trans("zestoaHutsa") . "</td></tr>";
                     }
 
                     $conn->close();
@@ -159,7 +160,7 @@ if ($result === false) {
                     </tr>
                 </tfoot>
             </table>
-            <button class="erosiBotoia"><?= trans("erosketaEgin") ?></button>
+            <button class="erosiBotoia" data-id="<?= $idErabiltzailea ?>"><?= trans("erosketaEgin") ?></button>
         </div>
     </div>
 
@@ -168,6 +169,76 @@ if ($result === false) {
     <footer class="footer">
         <?php require_once "parts/footer.php"; ?>
     </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            function taulaEguneratu() {
+                var erabiltzaileaId = $(".erosiBotoia").data("id");
+
+                $.ajax({
+                    url: "parts/egoeraUpdate.php",
+                    type: "POST",
+                    data: { idErabiltzailea: erabiltzaileaId, eguneraketa: "fetch" },
+                    dataType: "json",
+                    success: function (response) {
+                        if (response.success) {
+                            var tableBody = $(".zestoa tbody");
+                            tableBody.empty();
+                            var totalAmount = 0;
+
+                            response.egoerak.forEach(function (eskaera) {
+                                var row = `<tr>
+                                <td>${eskaera.izena}</td>
+                                <td><img src='../../public/irudiak/produktuak/${eskaera.irudia}'></td>
+                                <td>${eskaera.prezioa}€</td>
+                                <td id='egoera-${eskaera.idEskaera}'>${eskaera.egoeraAldatua}</td>
+                                <td>${(eskaera.prezioa * eskaera.kopurua).toFixed(2)}€</td>
+                            </tr>`;
+
+                                totalAmount += eskaera.prezioa * eskaera.kopurua;
+                                tableBody.append(row);
+                            });
+
+                            $(".zestoa tfoot td:last-child").html(`<strong>${totalAmount.toFixed(2)}€</strong>`);
+                        } else {
+                            alert("Errorea: " + response.message);
+                        }
+                    },
+                    error: function () {
+                        alert("Errorea datuak bidaltzerakoan.");
+                    }
+                });
+            }
+
+            $(".erosiBotoia").click(function () {
+                var erabiltzaileaId = $(this).data("id");
+
+                $.ajax({
+                    url: "parts/egoeraUpdate.php",
+                    type: "POST",
+                    data: { idErabiltzailea: erabiltzaileaId },
+                    dataType: "json",
+                    success: function (response) {
+                        if (response.success) {
+                            taulaEguneratu();
+                        } else {
+                            alert("Errorea: " + response.message);
+                        }
+                    },
+                    error: function () {
+                        alert("Errorea datuak bidaltzerakoan.");
+                    }
+                });
+            });
+
+            taulaEguneratu();
+        });
+    </script>
+
 
 </body>
 
