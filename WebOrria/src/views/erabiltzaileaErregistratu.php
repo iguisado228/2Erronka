@@ -60,37 +60,37 @@ if (isset($_POST["erregistratu"])) {
         <article class="main">
 
             <form method="post" action="erabiltzaileaErregistratu.php" class="ERformularioa">
-                <h1 class="ERh1">Sartu zure datuak</h1>
-                <label for="nan" class="ERetiketa">Nan</label>
+                <h1 class="ERh1"><?= trans(indexPhrase: "datuakSartu") ?></h1>
+                <label for="nan" class="ERetiketa"><?= trans("nan") ?></label>
                 <input type="text" name="nan" id="nan" required><br><br>
 
-                <label for="izena" class="ERetiketa">Izena</label>
+                <label for="izena" class="ERetiketa"><?= trans("izena") ?></label>
                 <input type="text" name="izena" id="izena" required><br><br>
 
-                <label for="abizena" class="ERetiketa">Abizena/Abizenak</label>
+                <label for="abizena" class="ERetiketa"><?= trans("abizena") ?></label>
                 <input type="text" name="abizena" id="abizena"><br><br>
 
-                <label for="telefonoa" class="ERetiketa">Tlf.Zenbakia</label>
+                <label for="telefonoa" class="ERetiketa"><?= trans("zenbakia") ?></label>
                 <input type="text" name="telefonoa" id="telefonoa" placeholder="XXX-XXX-XXX" pattern="[0-9]{9}">
                 <br>
                 <br>
 
-                <label for="helbidea" class="ERetiketa">Helbidea</label>
+                <label for="helbidea" class="ERetiketa"><?= trans("helbidea") ?></label>
                 <input type="text" name="helbidea" id="helbidea"><br><br>
 
-                <label for="erabiltzaileIzena" class="ERetiketa">Erabiltzaile izena</label>
+                <label for="erabiltzaileIzena" class="ERetiketa"><?= trans("erabiltzaileIzena") ?></label>
                 <input type="text" name="erabiltzaileIzena" id="erabiltzaileIzena" required><br><br>
 
-                <label for="pasahitza" class="ERetiketa">Pasahitza</label>
+                <label for="pasahitza" class="ERetiketa"><?= trans("pasahitza") ?></label>
                 <input type="password" name="pasahitza" id="pasahitza" required><br><br>
 
-                <label for="helbideElektronikoa" class="ERetiketa">Helbide elektronikoa</label>
+                <label for="helbideElektronikoa" class="ERetiketa"><?= trans("helbideElektronikoa") ?></label>
                 <input type="email" name="helbideElektronikoa" id="helbideElektronikoa" placeholder="exmpl@gmail.com"
                     pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
                 <br><br>
 
 
-                <button type="submit" class="ERbotoia" name="erregistratu">Erregistratu</button>
+                <button type="submit" class="ERbotoia" name="erregistratu"><?= trans("erregistratu") ?></button>
             </form>
         </article>
 

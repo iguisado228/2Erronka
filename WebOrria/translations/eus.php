@@ -97,5 +97,20 @@ return [
     "prezioaGuztira" => "Prezioa guztira: ",
     "erosketaEgin" => "Erosketa egin",
     "zestoaHutsa" => "Zestoa hutsa dago",
+
+    /* erabiltzaileaErregistratu */
+    "datuakSartu" => "Datuak sartu",
+    "nan" => "NAN",
+    "izena" => "Izena",
+    "abizena" => "Abizena",
+    "zenbakia" => "Tlf.Zenbakia",
+    "helbidea" => "Helbidea",
+    "erabiltzaileIzena" => "Erabiltzaile izena",
+    "pasahitza" => "Pasahitza",
+    "helbideElektronikoa" => "Helbide elektronikoa",
+    "erregistratu" => "Erregistratu",
+
+    /* saioa hasi */
+
 ];
 ?>

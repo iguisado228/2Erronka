@@ -92,5 +92,19 @@ return [
     "erosketaEgin" => "Make Purchase",
     "zestoaHutsa" => "The basket is empty",
 
+
+    /* erabiltzaileaErregistratu */
+    "datuakSartu" => "Enter your data",
+    "nan" => "ID",
+    "izena" => "Name",
+    "abizena" => "Surname",
+    "zenbakia" => "Phone number",
+    "helbidea" => "Address",
+    "erabiltzaileIzena" => "Username",
+    "pasahitza" => "Password",
+    "helbideElektronikoa" => "Email address",
+    "erregistratu" => "Register"
+
+
 ];
 ?>
