@@ -11,12 +11,20 @@
     <?php
     session_start();
 
-    if (!isset($_SESSION["_LANGUAGE"])) {
-        $_SESSION["_LANGUAGE"] = "eus";
+    if (isset($_GET["selectedLang"]) && $_GET["selectedLang"] != "") {
+        $currentLang = $_GET["selectedLang"];
+        $oppositeLang = ($currentLang === 'eus') ? 'en' : 'eus';
+    } else {
+
+        if (!isset($_SESSION["_LANGUAGE"])) {
+            $_SESSION["_LANGUAGE"] = "eus";
+        }
+
+        $currentLang = $_SESSION["_LANGUAGE"];
+        $oppositeLang = ($currentLang === 'eus') ? 'en' : 'eus';
+
     }
 
-    $currentLang = $_SESSION["_LANGUAGE"];
-    $oppositeLang = ($currentLang === 'eus') ? 'en' : 'eus';
     ?>
 
     <a href="?selectedLang=<?php echo $oppositeLang; ?>">
