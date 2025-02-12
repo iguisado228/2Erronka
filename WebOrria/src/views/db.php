@@ -2,9 +2,9 @@
 
 function konexioaSortu()
 {
-    $servername = "localhost";
-    $username = "root";
-    $password = "1MG2024";
+    $servername = "172.16.237.150";
+    $username = "administratzailea";
+    $password = "1234";
     $dbname = "2erronka";
     
     $conn = new mysqli($servername, $username, $password, $dbname);
