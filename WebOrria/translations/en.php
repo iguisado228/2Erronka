@@ -89,7 +89,7 @@ return [
     "guztiraEP" => "Total",
     "egoeraEP" => "Package Status",
     "prezioaGuztira" => "Total price: ",
-    "erosketaEgin" => "Make Purchase",
+    "erosketaEgin" => "Purchase",
     "zestoaHutsa" => "The basket is empty",
 
 

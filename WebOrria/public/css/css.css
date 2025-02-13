@@ -1181,17 +1181,18 @@ div .active {
  /* erabiltzailePanela */
 
  @media (max-width: 768px) { 
-  .erabiltzailePanela {
+  .content .zestoaGuztia {
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 100%;
+    width: 100%; /* Cambiar a 100% */
+    max-width: 350px; /* Si deseas limitarlo */
     text-align: center;
-    margin: 20px auto;
+    margin: 10px auto; /* Ajustar márgenes */
   }
- }
+}
+
 
  .content .zestoaGuztia {
   background: white;
