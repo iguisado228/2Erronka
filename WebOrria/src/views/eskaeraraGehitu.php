@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $conn->begin_transaction();
 
     try {
-        $idEskaera = uniqid(); /* Zenbaki random bat jartzen du, aldatu egin behar da, auto increment bat egin dezan */
+        $idEskaera = rand(0, 10000); /* zenbaki random bat sortzen du eskaerarentzako */
 
         foreach ($produktuak as $produktua) {
             $idProduktua = $produktua["id"];
