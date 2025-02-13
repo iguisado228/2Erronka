@@ -1180,29 +1180,43 @@ div .active {
 }
  /* erabiltzailePanela */
 
- @media (max-width: 768px) { 
-  .content .zestoaGuztia {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Cambiar a 100% */
-    max-width: 350px; /* Si deseas limitarlo */
-    text-align: center;
-    margin: 10px auto; /* Ajustar márgenes */
-  }
-}
-
-
  .content .zestoaGuztia {
   background: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 900px;
   text-align: center;
   margin: 20px auto;
+}
+
+.content .zestoaGuztia .onlyDesktop {
+  display: table-cell;
+}
+.content .zestoaGuztia .onlyPhone {
+  display: none;
+}
+
+
+@media (max-width: 768px) { 
+  .content .zestoaGuztia {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Cambiar a 100% */
+    text-align: center;
+    margin: 10px auto; /* Ajustar márgenes */
+  }
+  
+
+  .content .zestoaGuztia .onlyDesktop {
+    display: none;
+  }
+  .content .zestoaGuztia .onlyPhone {
+    display: table-cell;
+  }
+
 }
 
 .content h2 {
