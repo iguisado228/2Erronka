@@ -110,7 +110,21 @@ return [
     "helbideElektronikoa" => "Helbide elektronikoa",
     "erregistratu" => "Erregistratu",
 
-    /* saioa hasi */
+    /* produkuten filtroa */
+    "produktuakBilatu" => "Bilatu produktua:",
+    "prezioMinimoa" => "Prezio minimoa:",
+    "prezioMaximoa" => "Prezio maximoa:",
+    "filtratu" => "Filtratu",
+    "produktuGuztiak" => "Produktu guztiak",
+    "gehituZestora" => "Gehitu zestora",
+    "filtratutakoProduktuak" => "Filtratutako Produktuak",
+
+
+    /* erosketa zestoa */
+    "produktuakZestoan" => "Produktuak karritoan",
+    "guztiraZestoan" => "Guztira zestoan: ",
+    "eskaeraGehitu" => "Eskaerara gehitu",
+    "zestotikKendu" => "Kendu",
 
 ];
 ?>

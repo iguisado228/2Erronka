@@ -1,8 +1,8 @@
 <?php
 define('APP_DIR', $_SERVER['DOCUMENT_ROOT'] . '/2ERRONKA/WebOrria');
-define('HREF_VIEWS_DIR', '/2ERRONKA/WebOrria/src/views'); 
+define('HREF_VIEWS_DIR', '/2ERRONKA/WebOrria/src/views');
 
-require_once(APP_DIR . "/src/translation/translations.php"); 
+require_once(APP_DIR . "/src/translation/translations.php");
 require_once("db.php");
 
 $conn = konexioaSortu();
@@ -17,6 +17,7 @@ if (!empty($_GET["produktuaBilatu"])) {
     $sql .= " AND izena LIKE '%$produktuaBilatu%'";
 }
 
+
 if (!empty($_GET["gutxienekoPrezioa"])) {
     $gutxienekoPrezioa = (int) $_GET["gutxienekoPrezioa"];
     $sql .= " AND prezioa >= $gutxienekoPrezioa";
@@ -30,7 +31,7 @@ if (!empty($_GET["gehienezkoPrezioa"])) {
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    echo "<h1 class='filtratutakoProduktuak'>Filtratutako produktuak</h1>"; 
+    echo "<h1 class='filtratutakoProduktuak'>" . trans('filtratutakoProduktuak') . "</h1>";
     echo "<div class='produktuak'>";
     while ($row = $result->fetch_assoc()) {
         echo "<div class='produktua' data-idProduktua='" . $row["idProduktua"] . "' data-name='" . $row["izena"] . "' data-price='" . $row["prezioa"] . "'>";
@@ -40,13 +41,13 @@ if ($result->num_rows > 0) {
         echo "<img src='../../public/irudiak/produktuak/" . $row["irudia"] . "' >";
         echo "</div>";
         echo "<div class='gehituBotoia'>";
-        echo "<button class='gehitu-karritora'>Gehitu zestora</button>";
+        echo "<button class='gehitu-karritora'>" . trans('gehituZestora') . "</button>";
         echo "</div>";
         echo "</div>";
     }
     echo "</div>";
 } else {
-    echo "<h1 class='produktuGabe'>Ez da produkturik aurkitu</h1>"; 
+    echo "<h1 class='produktuGabe'>Ez da produkturik aurkitu</h1>";
 }
 
 

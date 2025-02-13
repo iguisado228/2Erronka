@@ -1353,4 +1353,56 @@ div .active {
   }
 }
 
+.produktuenAtala form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.produktuenAtala form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.produktuenAtala form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.produktuenAtala form button:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .produktuenAtala form {
+      flex-direction: column;
+      gap: 5px;
+  }
+
+  .produktuenAtala form input,
+  .produktuenAtala form button {
+      width: 100%;
+      max-width: 300px;
+  }
+
+  .produktuenAtala .produktuak {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
 

@@ -1,3 +1,4 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <?php
     require_once(APP_DIR . "/src/translation/translations.php"); //APP_DIR erabilita itzulpenen dokumentua atzitu dugu.
 
@@ -35,7 +36,7 @@
     <div id="login-container">
         <div id="login-content"></div>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script>
 
         $(document).ready(function () {
