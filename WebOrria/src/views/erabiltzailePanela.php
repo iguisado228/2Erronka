@@ -9,68 +9,7 @@
     <title>Erabiltzaile gunea</title>
 
     <style>
-        .content .zestoaGuztia {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 900px;
-            text-align: center;
-            margin: 20px auto;
-        }
-
-        .content h2 {
-            margin-bottom: 20px;
-        }
-
-        .content .zestoa {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        .content .zestoa th,
-        .content .zestoa td {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-            text-align: center;
-        }
-
-        .content .zestoa th {
-            background-color: #007bff;
-            color: white;
-        }
-
-        .content .zestoa tr:hover {
-            background-color: #f1f1f1;
-        }
-
-        .content .zestoa img {
-            width: 50px;
-            height: auto;
-            border-radius: 5px;
-        }
-
-        .content tfoot td {
-            font-size: 18px;
-            background-color: #eee;
-        }
-
-        .content .erosiBotoia {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .content .erosiBotoia:hover {
-            background-color: #218838;
-        }
+        
     </style>
 </head>
 

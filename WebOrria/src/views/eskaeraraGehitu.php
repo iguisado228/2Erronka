@@ -4,8 +4,6 @@ session_start();
 
 if (!isset($_SESSION["erabiltzailea"])) {
     die("Saioa hasi gabe zaude.");
-} else {
-    echo "Saioa hasia dago. Bezeroa ID: " . ($_SESSION['erabiltzailea']);
 }
 
 include 'db.php';
