@@ -44,9 +44,14 @@
                 <tfoot>
                     <tr>
                         <td class="onlyDesktop" colspan="4"><strong><?= trans("prezioaGuztira") ?></strong></td>
-                        <td><strong><?php echo "0" ?>€</strong></td>
+                        <td class="onlyDesktop total-precio"><strong>0€</strong></td>
+                    </tr>
+                    <tr class="onlyPhone">
+                        <td colspan="2" style="text-align: left;"><strong><?= trans("Prezio totala:") ?></strong></td>
+                        <td style="text-align: right;" class="total-precio"><strong>0€</strong></td>
                     </tr>
                 </tfoot>
+
             </table>
             <button class="erosiBotoia" data-id="<?= $idErabiltzailea ?>"><?= trans("erosketaEgin") ?></button>
         </div>

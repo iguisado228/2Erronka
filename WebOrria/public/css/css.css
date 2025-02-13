@@ -1101,9 +1101,9 @@ div .active {
   display: grid;
   grid-template-columns: repeat(3, 30%);
   grid-template-areas:
-    'izenburua izenburua izenburua'
-    'titulua titulua titulua'
-    'albisteIrudia albistea albistea';
+    "izenburua izenburua izenburua"
+    "titulua titulua titulua"
+    "albisteIrudia albistea albistea";
   gap: 2%;
   margin: 3%;
   justify-content: center;
@@ -1178,9 +1178,9 @@ div .active {
     font-size: 14px;
   }
 }
- /* erabiltzailePanela */
+/* erabiltzailePanela */
 
- .content .zestoaGuztia {
+.content .zestoaGuztia {
   background: white;
   padding: 20px;
   border-radius: 10px;
@@ -1197,18 +1197,16 @@ div .active {
   display: none;
 }
 
-
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   .content .zestoaGuztia {
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Cambiar a 100% */
+    width: 100%;
     text-align: center;
-    margin: 10px auto; /* Ajustar márgenes */
+    margin: 10px auto;
   }
-  
 
   .content .zestoaGuztia .onlyDesktop {
     display: none;
@@ -1217,6 +1215,28 @@ div .active {
     display: table-cell;
   }
 
+  .content .zestoaGuztia .onlyDesktop {
+    display: none;
+  }
+
+  .content .zestoaGuztia .onlyPhone {
+    display: table-row; 
+  }
+
+  .content .zestoa tfoot tr.onlyPhone td {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #eee;
+    padding: 10px;
+  }
+
+  .content .zestoa tfoot tr.onlyPhone td:first-child {
+    text-align: left; 
+  }
+
+  .content .zestoa tfoot tr.onlyPhone td:last-child {
+    text-align: right;
+  }
 }
 
 .content h2 {
