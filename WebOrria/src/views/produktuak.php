@@ -7,64 +7,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../public/css/css.css">
     <title>Produktuak</title>
-    <style>
-        form {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            background: #f8f8f8;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        form input {
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        form button {
-            background: #007bff;
-            color: white;
-            border: none;
-            padding: 8px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background 0.3s;
-        }
-
-        form button:hover {
-            background: #0056b3;
-        }
-
-
-
-        @media (max-width: 768px) {
-            form {
-                flex-direction: column;
-                gap: 5px;
-            }
-
-            form input,
-            form button {
-                width: 100%;
-                max-width: 300px;
-            }
-
-            .produktuak {
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            }
-        }
-    </style>
 </head>
 
-<body>
+<body class="produktuenAtala">
     <div class="grid-container">
         <header class="header">
             <?php require_once "parts/header.php" ?>
@@ -95,23 +40,23 @@
                 $result = $conn->query($sql);
                 ?>
                 <form id="produktuFiltroa">
-                    <label for="produktuaBilatu">Bilatu produktua:</label>
+                    <label for="produktuaBilatu"> <?= trans("produktuakBilatu") ?></label>
                     <input type="text" name="produktuaBilatu" id="produktuaBilatu">
 
-                    <label for="gutxienekoPrezioa">Prezio minimoa:</label>
+                    <label for="gutxienekoPrezioa"><?= trans(indexPhrase: "prezioMinimoa") ?></label>
                     <input type="number" name="gutxienekoPrezioa" id="gutxienekoPrezioa" min="0">
 
-                    <label for="gehienezkoPrezioa">Prezio maximoa:</label>
+                    <label for="gehienezkoPrezioa"><?= trans("prezioMaximoa") ?></label>
                     <input type="number" name="gehienezkoPrezioa" id="gehienezkoPrezioa" min="0">
 
-                    <button type="submit">Filtratu</button>
+                    <button type="submit"><?= trans("filtratu") ?></button>
                 </form>
 
                 <div id="produktuak"></div>
 
                 <?php
                 if ($result->num_rows > 0) {
-                    echo "<h1 class='produktuGuztiak'>Produktu guztiak</h1>";
+                    echo "<h1 class='produktuGuztiak'>" . trans('produktuGuztiak') . "</h1>";
                     echo "<div class='produktuak'>";
                     while ($row = $result->fetch_assoc()) {
                         echo "<div class='produktua' data-idProduktua='" . $row["idProduktua"] . "' data-name='" . $row["izena"] . "' data-price='" . $row["prezioa"] . "'>";
@@ -121,7 +66,7 @@
                         echo "<img src='../../public/irudiak/produktuak/" . $row["irudia"] . "' >";
                         echo "</div>";
                         echo "<div class='gehituBotoia'>";
-                        echo "<button class='gehitu-karritora'>Gehitu zestora</button>";
+                        echo "<button class='gehitu-karritora'>" . trans('gehituZestora') . "</button>";
                         echo "</div>";
                         echo "</div>";
                     }

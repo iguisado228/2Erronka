@@ -103,7 +103,26 @@ return [
     "erabiltzaileIzena" => "Username",
     "pasahitza" => "Password",
     "helbideElektronikoa" => "Email address",
-    "erregistratu" => "Register"
+    "erregistratu" => "Register",
+
+    /* produkuten filtroa */
+
+    "produktuakBilatu" => "Search products:",
+    "prezioMinimoa" => "Minimum price:",
+    "prezioMaximoa" => "Maximum price:",
+    "filtratu" => "Filter",
+    "produktuGuztiak" => "All products",
+    "gehituZestora" => "Add to cart",
+    "filtratutakoProduktuak" => "Filtered products",
+
+
+    /* erosketa zestoa */
+    "produktuakZestoan" => "Products in the cart",
+    "guztiraZestoan" => "Total in the cart: ",
+    "eskaeraGehitu" => "Add to order",
+    "zestotikKendu" => "Remove",
+
+
 
 
 ];

@@ -65,16 +65,16 @@
             const karritoElementuak = karritoa.map(item => `
                 <p>
                     ${item.izena} - ${item.prezioa.toFixed(2)}€ 
-                    <button class="kendu-karritotik" data-id="${item.id}">Kendu</button>
+                    <button class="kendu-karritotik" data-id="${item.id}"><?= trans(indexPhrase: 'zestotikKendu') ?></button>
                 </p>
             `).join("");
 
             karritoaElementua.innerHTML = `
-                <h3>Produktuak karritoan:</h3>
+            <h3><?= trans('produktuakZestoan') ?></h3>
                 ${karritoElementuak}
-                <p><strong>Guztira: ${karritoa.reduce((guztira, item) => guztira + item.prezioa, 0).toFixed(2)}€</strong></p>
+                <p><strong><?= trans('guztiraZestoan') ?> ${karritoa.reduce((guztira, item) => guztira + item.prezioa, 0).toFixed(2)}€</strong></p>
                 
-                <button class="eskaeraGehitu">Eskaera gehitu</button>
+                <button class="eskaeraGehitu"><?= trans(indexPhrase: 'eskaeraGehitu') ?></button>
             `;
         }
 
