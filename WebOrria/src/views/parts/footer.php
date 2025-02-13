@@ -1,7 +1,4 @@
-<head>
-  <link rel="stylesheet" href="../../../public/css/css.css">
-  <script src="https://kit.fontawesome.com/83f15f6aab.js" crossorigin="anonymous"></script>
-</head>
+<script src="https://kit.fontawesome.com/83f15f6aab.js" crossorigin="anonymous"></script>
 
 <footer>
   <div class="footer">

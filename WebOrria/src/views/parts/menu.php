@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <link rel="stylesheet" href="../../../public/css/css.css">
-</head>
-
-<body>
-
     <?php
     require_once(APP_DIR . "/src/translation/translations.php"); //APP_DIR erabilita itzulpenen dokumentua atzitu dugu.
 
@@ -92,6 +79,3 @@
 
 
     </script>
-</body>
-
-</html>
